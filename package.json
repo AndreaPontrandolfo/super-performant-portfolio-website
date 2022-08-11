@@ -15,6 +15,8 @@
     "@astrojs/tailwind": "^1.0.0",
     "astro": "^1.0.1",
     "astro-compress": "^0.0.17",
+    "prettier": "^2.7.1",
+    "prettier-plugin-astro": "^0.5.0",
     "rollup": "^2.77.2"
   }
 }
