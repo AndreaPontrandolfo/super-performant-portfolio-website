@@ -1,145 +1,226 @@
 ---
-import Artwork from "./Artwork.astro";
-import AccademiaToo from "../images/Accademia too.jpg";
-import Accademia from "../images/Accademia.jpg";
-import Anyway from "../images/Anyway.jpg";
-import Canal from "../images/Canal.jpg";
-import Carnival from "../images/Carnival.jpg";
-import Casanova from "../images/Casanova.jpg";
-import CoffeeBreak from "../images/Coffee Break.jpg";
-import Contact from "../images/Contact.jpg";
-import Earth from "../images/Earth.jpg";
-import Gold from "../images/Gold.jpg";
-import Holiday from "../images/Holiday.jpg";
-import JazzWorld from "../images/Jazz world.jpg";
-import Jazzman from "../images/Jazzman.jpg";
-import MM from "../images/M.M.jpg";
-import NewContact from "../images/New conctact.jpg";
-import Oceans from "../images/Oceans.jpg";
-import PiazzaN1 from "../images/Piazza n.1.jpg";
-import PlanetEarth from "../images/Planet Earth.jpg";
-import Rockstar from "../images/Rockstar.jpg";
-import South from "../images/South.jpg";
-import Temple from "../images/Temple.jpg";
-import Through from "../images/Through.jpg";
-import Time from "../images/Time.jpg";
-import ToTheMusicCity from "../images/To the music city.jpg";
-import Why_ from "../images/Why_.jpg";
+import { Picture } from "astro-imagetools/components";
+// import Artwork from "./Artwork.astro";
+// import AccademiaToo from "../images/Accademia too.jpg";
+// import Accademia from "../images/Accademia.jpg";
+// import Anyway from "../images/Anyway.jpg";
+// import Canal from "../images/Canal.jpg";
+// import Carnival from "../images/Carnival.jpg";
+// import Casanova from "../images/Casanova.jpg";
+// import CoffeeBreak from "../images/Coffee Break.jpg";
+// import Contact from "../images/Contact.jpg";
+// import Earth from "../images/Earth.jpg";
+// import Gold from "../images/Gold.jpg";
+// import Holiday from "../images/Holiday.jpg";
+// import JazzWorld from "../images/Jazz world.jpg";
+// import Jazzman from "../images/Jazzman.jpg";
+// import MM from "../images/M.M.jpg";
+// import NewContact from "../images/New conctact.jpg";
+// import Oceans from "../images/Oceans.jpg";
+// import PiazzaN1 from "../images/Piazza n.1.jpg";
+// import PlanetEarth from "../images/Planet Earth.jpg";
+// import Rockstar from "../images/Rockstar.jpg";
+// import ToTheMusicCity from "../images/To the music city.jpg";
+// import Why_ from "../images/Why_.jpg";
+// import Time from "../images/Time.jpg";
+// import Through from "../images/Through.jpg";
+// import Temple from "../images/Temple.jpg";
+// import South from "../images/South.jpg";
 ---
 
-<div class="container">
-  <div class="small">
-    <img src={South} />
+<div class="row">
+  <div class="column">
+    <Picture
+      src="/src/images/South.jpg"
+      alt="artwork called South"
+      width={1024}
+      flatten={true}
+    />
+    <Picture
+      src="/src/images/Temple.jpg"
+      alt="artwork called Temple"
+      width={1024}
+      flatten={true}
+    />
+    <Picture
+      src="/src/images/Through.jpg"
+      alt="artwork called Through"
+      width={1024}
+      flatten={true}
+    />
+    <Picture
+      src="/src/images/Time.jpg"
+      alt="artwork called Time"
+      width={1024}
+      flatten={true}
+    />
+    <Picture
+      src="/src/images/ToTheMusicCity.jpg"
+      alt="artwork called ToTheMusicCity"
+      width={1024}
+      flatten={true}
+    />
+    <Picture
+      src="/src/images/Why.jpg"
+      alt="artwork called Why"
+      width={1024}
+      flatten={true}
+    />
   </div>
-  <div class="small">
-    <img src={Temple} />
+  <div class="column">
+    <Picture
+      src="/src/images/Jazzman.jpg"
+      alt="artwork called Jazzman"
+      width={1024}
+      flatten={true}
+    />
+    <Picture
+      src="/src/images/JazzWorld.jpg"
+      alt="artwork called JazzWorld"
+      width={1024}
+      flatten={true}
+    />
+    <Picture
+      src="/src/images/Holiday.jpg"
+      alt="artwork called Holiday"
+      width={1024}
+      flatten={true}
+    />
+    <Picture
+      src="/src/images/Gold.jpg"
+      alt="artwork called Gold"
+      width={1024}
+      flatten={true}
+    />
+    <Picture
+      src="/src/images/Earth.jpg"
+      alt="artwork called Earth"
+      width={1024}
+      flatten={true}
+    />
+    <Picture
+      src="/src/images/Contact.jpg"
+      alt="artwork called Contact"
+      width={1024}
+      flatten={true}
+    />
   </div>
-  <div class="small">
-    <img src={Through} />
+  <div class="column">
+    <Picture
+      src="/src/images/CoffeeBreak.jpg"
+      alt="artwork called CoffeeBreak"
+      width={1024}
+      flatten={true}
+    />
+    <Picture
+      src="/src/images/Casanova.jpg"
+      alt="artwork called Casanova"
+      width={1024}
+      flatten={true}
+    />
+    <Picture
+      src="/src/images/Carnival.jpg"
+      alt="artwork called Carnival"
+      width={1024}
+      flatten={true}
+    />
+    <Picture
+      src="/src/images/Canal.jpg"
+      alt="artwork called Canal"
+      width={1024}
+      flatten={true}
+    />
+    <Picture
+      src="/src/images/Anyway.jpg"
+      alt="artwork called Anyway"
+      width={1024}
+      flatten={true}
+    />
+    <Picture
+      src="/src/images/Accademia.jpg"
+      alt="artwork called Accademia"
+      width={1024}
+      flatten={true}
+    />
+    <Picture
+      src="/src/images/AccademiaToo.jpg"
+      alt="artwork called AccademiaToo"
+      width={1024}
+      flatten={true}
+    />
   </div>
-  <div class="small">
-    <img src={Time} />
-  </div>
-  <div class="small">
-    <img src={ToTheMusicCity} />
-  </div>
-  <div class="small">
-    <img src={Why_} />
-  </div>
-  <div class="small">
-    <img src={Rockstar} />
-  </div>
-  <div class="medium">
-    <img src={PlanetEarth} />
-  </div>
-  <div class="small">
-    <img src={PiazzaN1} />
-  </div>
-  <div class="large">
-    <img src={Oceans} />
-  </div>
-  <div class="small">
-    <img src={NewContact} />
-  </div>
-  <div class="small">
-    <img src={MM} />
-  </div>
-  <div class="small">
-    <img src={Jazzman} />
-  </div>
-  <div class="medium">
-    <img src={JazzWorld} />
-  </div>
-  <div class="small">
-    <img src={Holiday} />
-  </div>
-  <div class="medium">
-    <img src={Gold} />
-  </div>
-  <div class="large">
-    <img src={Earth} />
-  </div>
-  <div class="medium">
-    <img src={Contact} />
-  </div>
-  <div class="small">
-    <img src={CoffeeBreak} />
-  </div>
-  <div class="large">
-    <img src={Casanova} />
-  </div>
-  <div class="small">
-    <img src={Carnival} />
-  </div>
-  <div class="large">
-    <img src={Canal} />
-  </div>
-  <div class="large">
-    <img src={Anyway} />
-  </div>
-  <div class="small">
-    <img src={Accademia} />
-  </div>
-  <div class="small">
-    <img src={AccademiaToo} />
+  <div class="column">
+    <Picture
+      src="/src/images/PlanetEarth.jpg"
+      alt="artwork called PlanetEarth"
+      width={1024}
+      flatten={true}
+    />
+    <Picture
+      src="/src/images/PiazzaN1.jpg"
+      alt="artwork called PiazzaN1"
+      width={1024}
+      flatten={true}
+    />
+    <Picture
+      src="/src/images/Oceans.jpg"
+      alt="artwork called Oceans"
+      width={1024}
+      flatten={true}
+    />
+    <Picture
+      src="/src/images/NewContact.jpg"
+      alt="artwork called NewContact"
+      width={1024}
+      flatten={true}
+    />
+    <Picture
+      src="/src/images/MM.jpg"
+      alt="artwork called MM"
+      width={1024}
+      flatten={true}
+    />
+    <Picture
+      src="/src/images/Rockstar.jpg"
+      alt="artwork called Rockstar"
+      width={1024}
+      flatten={true}
+    />
   </div>
 </div>
 <style>
-  .container {
-    width: 80vw;
-    margin: 3em auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-auto-rows: 50px;
-    grid-auto-flow: dense;
-    grid-gap: 5px;
-  }
-
-  .large,
-  .medium,
-  .small {
+  .row {
     display: flex;
-    height: 100%;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
     width: 100%;
-    grid-column: auto / span 1;
   }
 
-  .large {
-    grid-row: span 4;
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
   }
 
-  .medium {
-    grid-row: span 3;
-  }
-
-  .small {
-    grid-row: span 2;
-  }
-
-  .container img {
-    width: 100%;
-    height: auto;
-    -o-object-fit: cover;
-    object-fit: cover;
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
   }
 </style>
