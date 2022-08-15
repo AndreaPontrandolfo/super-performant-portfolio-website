@@ -3,24 +3,20 @@ import Layout from '../layouts/Layout.astro';
 import Gallery from '../components/Gallery.astro';
 import Slideshow from '../components/Slideshow.astro';
 import Navbar from '../components/Navbar.astro';
+import HeroText from '../components/HeroText.astro';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
 		<Navbar />
 		<Slideshow>
-			<h1 class="text-white text-center w-screen h-screen m-0">Luca
-				Pontrandolfo
-			</h1>
+			<div class="flex items-center w-screen h-screen">
+				<HeroText />
+			</div>
 		</Slideshow>
 		<Gallery />
 	</main>
 </Layout>
-<style>
-	h1 {
-		margin: 2rem 0;
-	}
-</style>
 <script src="../../node_modules/flowbite/dist/flowbite.js" type="module">
 	import 'flowbite';
 </script>
