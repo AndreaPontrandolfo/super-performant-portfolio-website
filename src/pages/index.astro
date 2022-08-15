@@ -2,21 +2,14 @@
 import Layout from '../layouts/Layout.astro';
 import Gallery from '../components/Gallery.astro';
 import Slideshow from '../components/Slideshow.astro';
-import Navbar from '../components/Navbar.astro';
 import HeroText from '../components/HeroText.astro';
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<Navbar />
-		<Slideshow>
-			<div class="flex items-center w-screen h-screen">
-				<HeroText />
-			</div>
-		</Slideshow>
-		<Gallery />
-	</main>
+<Layout title="Homepage">
+	<Slideshow>
+		<div class="flex items-center w-screen h-screen">
+			<HeroText />
+		</div>
+	</Slideshow>
+	<Gallery />
 </Layout>
-<script src="../../node_modules/flowbite/dist/flowbite.js" type="module">
-	import 'flowbite';
-</script>
