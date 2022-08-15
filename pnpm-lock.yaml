@@ -9,6 +9,7 @@ specifiers:
   astro-imagetools: ^0.6.10
   autoprefixer: ^10.4.8
   flowbite: ^1.5.2
+  flowbite-typography: ^1.0.2
   postcss: ^8.4.16
   prettier: ^2.7.1
   prettier-plugin-astro: ^0.5.0
@@ -26,6 +27,7 @@ devDependencies:
   astro-compress: 0.0.17
   astro-imagetools: 0.6.10_astro@1.0.1
   autoprefixer: 10.4.8_postcss@8.4.16
+  flowbite-typography: 1.0.2_tailwindcss@3.1.8
   postcss: 8.4.16
   prettier: 2.7.1
   prettier-plugin-astro: 0.5.0
@@ -2239,6 +2241,17 @@ packages:
       pkg-dir: 4.2.0
     dev: true
 
+  /flowbite-typography/1.0.2_tailwindcss@3.1.8:
+    resolution: {integrity: sha512-jRN0NJFG/p0nQNAdysyoKJp++0feQ6jHWCE+tJTBlw46/tFOYW99eKDHJOnvXPNik85crhkm+voWC4ifO1+HSw==}
+    peerDependencies:
+      tailwindcss: '>=3.0.0 || insiders'
+    dependencies:
+      lodash.castarray: 4.4.0
+      lodash.isplainobject: 4.0.6
+      lodash.merge: 4.6.2
+      tailwindcss: 3.1.8
+    dev: true
+
   /flowbite/1.5.2:
     resolution: {integrity: sha512-oSKhPkg0bYb4dZG4ypSh++dPrFM3IOSER6HOwJHYRFPW5u9PXL4AQFMQh7Kytgws2xrDQyl/zqefZmymeWt2IA==}
     dependencies:
@@ -2786,6 +2799,18 @@ packages:
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
       p-locate: 6.0.0
+    dev: true
+
+  /lodash.castarray/4.4.0:
+    resolution: {integrity: sha512-aVx8ztPv7/2ULbArGJ2Y42bG1mEQ5mGjpdvrbJcJFU3TbYybe+QlLS4pst9zV52ymy2in1KpFPiZnAOATxD4+Q==}
+    dev: true
+
+  /lodash.isplainobject/4.0.6:
+    resolution: {integrity: sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA==}
+    dev: true
+
+  /lodash.merge/4.6.2:
+    resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
     dev: true
 
   /log-symbols/5.1.0:

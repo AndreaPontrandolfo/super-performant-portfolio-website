@@ -17,6 +17,7 @@
     "astro-compress": "^0.0.17",
     "astro-imagetools": "^0.6.10",
     "autoprefixer": "^10.4.8",
+    "flowbite-typography": "^1.0.2",
     "postcss": "^8.4.16",
     "prettier": "^2.7.1",
     "prettier-plugin-astro": "^0.5.0",
