@@ -1,11 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Gallery from '../components/Gallery.astro';
+import Slideshow from '../components/Slideshow.astro';
+import Navbar from '../components/Navbar.astro';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<h1>Luca Pontrandolfo Portfolio</h1>
+		<Slideshow>
+			<Navbar />
+			<h1 class="text-white text-center w-screen h-screen m-0">Luca
+				Pontrandolfo
+			</h1>
+		</Slideshow>
 		<Gallery />
 	</main>
 </Layout>
@@ -14,8 +21,8 @@ import Gallery from '../components/Gallery.astro';
 		margin: 2rem 0;
 	}
 
-	main {
+	/* main {
 		margin: auto;
 		padding: 1em;
-	}
+	} */
 </style>
