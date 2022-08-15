@@ -7,8 +7,8 @@ import Navbar from '../components/Navbar.astro';
 
 <Layout title="Welcome to Astro.">
 	<main>
+		<Navbar />
 		<Slideshow>
-			<Navbar />
 			<h1 class="text-white text-center w-screen h-screen m-0">Luca
 				Pontrandolfo
 			</h1>
@@ -20,9 +20,7 @@ import Navbar from '../components/Navbar.astro';
 	h1 {
 		margin: 2rem 0;
 	}
-
-	/* main {
-		margin: auto;
-		padding: 1em;
-	} */
 </style>
+<script src="../../node_modules/flowbite/dist/flowbite.js" type="module">
+	import 'flowbite';
+</script>
