@@ -2,16 +2,22 @@
 import { Picture } from "astro-imagetools/components";
 import { sharedPictureProps } from "../utils/sharedPictureProps";
 import Container from "./Container.astro";
+import "../styles/images.styles.css";
 ---
 
 <Container>
   <div class="row">
     <div class="column">
-      <Picture
-        src="/src/images/torinoSeries/ReflexTOn.1.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
-      />
+      <div class="container mt-1 mb-1">
+        <Picture
+          src="/src/images/torinoSeries/ReflexTOn.1.png"
+          alt="artwork called ReflexTOn"
+          {...sharedPictureProps}
+        />
+        <div class="overlay">
+          <div class="text">ReflexTOn</div>
+        </div>
+      </div>
       <Picture
         src="/src/images/torinoSeries/ReflexTOn.3.png"
         alt="artwork called ReflexTOn"

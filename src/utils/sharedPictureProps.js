@@ -4,12 +4,12 @@ export const sharedPictureProps = {
   fallbackFormat: "jpg",
   includeSourceFormat: false,
   attributes: {
-    picture: {
-      class: "mt-1 mb-1",
-    },
+    // picture: {
+    //   class: "mt-1 mb-1",
+    // },
     img: {
       //  "border-2 border-zinc-200" - consider adding this
-      class: "rounded-md",
+      // class: "rounded-md",
     },
   },
 };

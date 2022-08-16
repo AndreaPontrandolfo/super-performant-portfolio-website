@@ -1,14 +1,37 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Icon } from "astro-icon";
+import Container from "../components/Container.astro";
+import BaseIcon from "../components/BaseIcon.astro";
 ---
 
 <Layout title="Contacts">
-  <h2>Contatti</h2>
-  <p>
-    Per informazioni sulle mie opere e le prossime esibizioni, contattatemi
-    tramite i seguenti canali
-  </p>
-  <Icon name="ic:baseline-phone" />
-  <Icon name="ic:baseline-email" />
+  <Container>
+    <div class="format">
+      <h2>Contatti</h2>
+      <p>
+        Per informazioni sulle mie opere e le prossime esibizioni, contattatemi
+        tramite i seguenti canali
+      </p>
+      <a href="mailto: luca.pontrandolfo@gmail.com" class="flex items-center"
+        ><span class="mr-2">
+          <Icon name="ic:baseline-email" class="w-6 h-6" fill="currentColor" />
+        </span><span>luca.pontrandolfo@gmail.com</span>
+      </a>
+      <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+        <a
+          href="https://www.facebook.com/luca.pontrandolfo"
+          class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+        >
+          <BaseIcon name="ic:baseline-facebook" title="Facebook page" />
+        </a>
+        <a
+          href="https://www.instagram.com/lucapontrandolfo/"
+          class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+        >
+          <BaseIcon name="ic:baseline-instagram" title="Instagram page" />
+        </a>
+      </div>
+    </div>
+  </Container>
 </Layout>
