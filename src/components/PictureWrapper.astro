@@ -13,6 +13,6 @@ const { src, title } = Astro.props as Props;
 <div class="picture-container mb-2">
   <Picture src={src} alt={`artwork called ${title}`} {...sharedPictureProps} />
   <div class="overlay">
-    <div class="text">{title}</div>
+    <div class="text format">{title}</div>
   </div>
 </div>

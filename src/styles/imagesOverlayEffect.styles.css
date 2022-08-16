@@ -12,7 +12,7 @@
 
 .overlay {
   position: absolute;
-  z-index: 99;
+  z-index: 2;
   top: 0;
   bottom: 0;
   left: 0;
@@ -27,18 +27,14 @@
 
 .picture-container:hover .overlay {
   opacity: 1;
-  z-index: 99;
 }
 
 .text {
   color: white;
-  z-index: 99;
   font-size: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
 }

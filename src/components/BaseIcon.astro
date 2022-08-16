@@ -3,11 +3,13 @@ import { Icon } from "astro-icon";
 export interface Props {
   name: string;
   title: string;
+  sizes?: number;
 }
 
-const { name, title } = Astro.props as Props;
+const { name, title, sizes = 6 } = Astro.props as Props;
 ---
 
-<Icon name={name} class="w-6 h-6" fill="currentColor" /><span class="sr-only"
+<Icon name={name} class={`w-${sizes} h-${sizes}`} fill="currentColor" /><span
+  class="sr-only"
   >{title}
 </span>
