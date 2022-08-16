@@ -5,7 +5,21 @@ module.exports = {
     "./node_modules/flowbite/**/*.js",
   ],
   theme: {
-    extend: {},
+    extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            p: {
+              marginTop: "0.5em",
+              marginBottom: "0.5em",
+            },
+          },
+        },
+      },
+    },
+    fontFamily: {
+      sans: ["Montserrat", "system-ui"],
+    },
   },
   plugins: [require("flowbite/plugin"), require("flowbite-typography")],
 };

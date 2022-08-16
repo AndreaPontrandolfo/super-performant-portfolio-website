@@ -25,6 +25,8 @@
     "tailwindcss": "^3.1.8"
   },
   "dependencies": {
+    "@fontsource/montserrat": "^4.5.12",
+    "astro-icon": "^0.7.3",
     "flowbite": "^1.5.2"
   }
 }

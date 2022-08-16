@@ -2,7 +2,13 @@
 import { BackgroundPicture } from "astro-imagetools/components";
 ---
 
-<BackgroundPicture attributes={{ class: "brightness-[0.2]" }} src="/src/images/firstgallery/3Through.png" flatten={true}
-    preload="webp" fallbackFormat="jpg" includeSourceFormat={false}>
-    <slot />
+<BackgroundPicture
+  attributes={{ class: "brightness-[0.2]" }}
+  src="/src/images/firstgallery/3Through.png"
+  flatten={true}
+  preload="webp"
+  fallbackFormat="jpg"
+  includeSourceFormat={false}
+>
+  <slot />
 </BackgroundPicture>
