@@ -1,12 +1,12 @@
-.container {
+.picture-container {
   position: relative;
 }
 
-.container,
-.container .overlay,
-.container picture,
-.container picture::after,
-.container img {
+.picture-container,
+.picture-container .overlay,
+.picture-container picture,
+.picture-container picture::after,
+.picture-container img {
   border-radius: 0.375rem;
 }
 
@@ -25,7 +25,7 @@
   /* background: linear-gradient(to bottom, transparent 0%, black 100%); */
 }
 
-.container:hover .overlay {
+.picture-container:hover .overlay {
   opacity: 1;
   z-index: 99;
 }

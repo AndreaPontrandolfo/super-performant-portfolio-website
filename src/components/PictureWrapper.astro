@@ -1,16 +1,18 @@
 ---
 import { Picture } from "astro-imagetools/components";
 import { sharedPictureProps } from "../utils/sharedPictureProps";
-import "../styles/images.styles.css";
+import "../styles/imagesOverlayEffect.styles.css";
+export interface Props {
+  src: string;
+  title: string;
+}
+
+const { src, title } = Astro.props as Props;
 ---
 
-<div class="container mt-1 mb-1">
-  <Picture
-    src="/src/images/torinoSeries/ReflexTOn.1.png"
-    alt="artwork called ReflexTOn"
-    {...sharedPictureProps}
-  />
+<div class="picture-container mb-2">
+  <Picture src={src} alt={`artwork called ${title}`} {...sharedPictureProps} />
   <div class="overlay">
-    <div class="text">ReflexTOn</div>
+    <div class="text">{title}</div>
   </div>
 </div>

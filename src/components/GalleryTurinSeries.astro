@@ -2,72 +2,57 @@
 import { Picture } from "astro-imagetools/components";
 import { sharedPictureProps } from "../utils/sharedPictureProps";
 import Container from "./Container.astro";
-import "../styles/images.styles.css";
+import PictureWrapper from "./PictureWrapper.astro";
 ---
 
 <Container>
   <div class="row">
     <div class="column">
-      <div class="container mt-1 mb-1">
-        <Picture
-          src="/src/images/torinoSeries/ReflexTOn.1.png"
-          alt="artwork called ReflexTOn"
-          {...sharedPictureProps}
-        />
-        <div class="overlay">
-          <div class="text">ReflexTOn</div>
-        </div>
-      </div>
-      <Picture
+      <PictureWrapper
+        src="/src/images/torinoSeries/ReflexTOn.1.png"
+        title="ReflexTOn 1"
+      />
+      <PictureWrapper
         src="/src/images/torinoSeries/ReflexTOn.3.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
+        title="ReflexTOn 3"
       />
-      <Picture
+      <PictureWrapper
         src="/src/images/torinoSeries/ReflexTOn.5.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
+        title="ReflexTOn 5"
       />
     </div>
     <div class="column">
-      <Picture
+      <PictureWrapper
         src="/src/images/torinoSeries/ReflexTOn.2.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
+        title="ReflexTOn 2"
       />
-      <Picture
+      <PictureWrapper
         src="/src/images/torinoSeries/ReflexTOn.4.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
+        title="ReflexTOn 4"
       />
-      <Picture
+      <PictureWrapper
         src="/src/images/torinoSeries/ReflexTOn.6.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
+        title="ReflexTOn 6"
       />
     </div>
     <div class="column">
-      <Picture
+      <PictureWrapper
         src="/src/images/torinoSeries/ReflexTOn.7.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
+        title="ReflexTOn 7"
       />
-      <Picture
+      <PictureWrapper
         src="/src/images/torinoSeries/ReflexTOn.8.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
+        title="ReflexTOn 8"
       />
     </div>
     <div class="column">
-      <Picture
+      <PictureWrapper
         src="/src/images/torinoSeries/ReflexTOn.9.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
+        title="ReflexTOn 9"
       />
-      <Picture
+      <PictureWrapper
         src="/src/images/torinoSeries/ReflexTOn.10.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
+        title="ReflexTOn 10"
       />
     </div>
   </div>
