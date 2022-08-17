@@ -21,11 +21,11 @@ const { title } = Astro.props as Props;
   </head>
 
   <body>
+    <Navbar currentRoute={title} />
     <main>
-      <Navbar currentRoute={title} />
       <slot />
-      <Footer />
     </main>
+    <Footer />
     <script src="../../node_modules/flowbite/dist/flowbite.js">
       import "flowbite";
     </script>
@@ -49,12 +49,10 @@ const { title } = Astro.props as Props;
     background-color: var(--color-bg);
   }
 
-  :global(h1) {
-    font-size: var(--font-size-xl);
-  }
-
-  :global(h2) {
-    font-size: var(--font-size-lg);
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
 
   :global(code) {
