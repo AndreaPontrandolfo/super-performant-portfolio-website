@@ -1,180 +1,92 @@
 ---
-import { Picture } from "astro-imagetools/components";
-import { sharedPictureProps } from "../utils/sharedPictureProps";
 import Container from "./Container.astro";
+import "../styles/masonry.styles.css";
+import PictureWrapper from "./PictureWrapper.astro";
 ---
 
 <Container>
   <div class="row">
     <div class="column">
-      <Picture
+      <PictureWrapper
         src="/src/images/firstgallery/1PlanetEarth.png"
-        alt="artwork called PlanetEarth"
-        {...sharedPictureProps}
+        title="Planet Earth"
       />
-      <Picture
+      <PictureWrapper
         src="/src/images/firstgallery/5Accademia.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
+        title="Accademia"
       />
-      <Picture
-        src="/src/images/firstgallery/9South.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
-      />
-      <Picture
+      <PictureWrapper src="/src/images/firstgallery/9South.png" title="South" />
+      <PictureWrapper
         src="/src/images/secondGallery/1Accademiatoo.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
+        title="Accademia too"
       />
-      <Picture
-        src="/src/images/secondGallery/5Temple.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
+      <PictureWrapper src="/src/images/secondGallery/5Temple.png" title="Temple"
       />
-      <Picture
-        src="/src/images/secondGallery/9Time.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
-      />
+      <PictureWrapper src="/src/images/secondGallery/9Time.png" title="Time" />
     </div>
     <div class="column">
-      <Picture
+      <PictureWrapper
         src="/src/images/firstgallery/2Tothemusiccity.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
+        title="To the music city"
       />
-      <Picture
-        src="/src/images/firstgallery/6Why_.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
+      <PictureWrapper src="/src/images/firstgallery/6Why_.png" title="Why" />
+      <PictureWrapper src="/src/images/firstgallery/10Canal.png" title="Canal"
       />
-      <Picture
-        src="/src/images/firstgallery/10Canal.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
+      <PictureWrapper src="/src/images/secondGallery/2Anyway.png" title="Anyway"
       />
-      <Picture
-        src="/src/images/secondGallery/2Anyway.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
-      />
-      <Picture
+      <PictureWrapper
         src="/src/images/secondGallery/6Casanova.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
+        title="Casanova"
       />
-      <Picture
+      <PictureWrapper
         src="/src/images/secondGallery/10Jazzman.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
+        title="Jazzman"
       />
-      <Picture
-        src="/src/images/secondGallery/13M.M.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
-      />
+      <PictureWrapper src="/src/images/secondGallery/13M.M.png" title="M.M" />
     </div>
     <div class="column">
-      <Picture
+      <PictureWrapper
         src="/src/images/firstgallery/3Through.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
+        title="Through"
       />
-      <Picture
+      <PictureWrapper
         src="/src/images/firstgallery/7Carnival.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
+        title="Carnival"
       />
-      <Picture
+      <PictureWrapper
         src="/src/images/firstgallery/11Contact.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
+        title="Contact"
       />
-      <Picture
+      <PictureWrapper
         src="/src/images/secondGallery/3Newconctact.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
+        title="New contact"
       />
-      <Picture
+      <PictureWrapper
         src="/src/images/secondGallery/7Holiday.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
+        title="Holiday"
       />
-      <Picture
+      <PictureWrapper
         src="/src/images/secondGallery/11Jazzworld.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
+        title="Jazzworld"
       />
     </div>
     <div class="column">
-      <Picture
-        src="/src/images/firstgallery/4Earth.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
-      />
-      <Picture
+      <PictureWrapper src="/src/images/firstgallery/4Earth.png" title="Earth" />
+      <PictureWrapper
         src="/src/images/firstgallery/8CoffeeBreak.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
+        title="Coffee break"
       />
-      <Picture
-        src="/src/images/firstgallery/12Gold.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
+      <PictureWrapper src="/src/images/firstgallery/12Gold.png" title="Gold" />
+      <PictureWrapper src="/src/images/secondGallery/4Oceans.png" title="Oceans"
       />
-      <Picture
-        src="/src/images/secondGallery/4Oceans.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
-      />
-      <Picture
+      <PictureWrapper
         src="/src/images/secondGallery/8Piazzan1.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
+        title="Piazzan1"
       />
-      <Picture
+      <PictureWrapper
         src="/src/images/secondGallery/12Rockstar.png"
-        alt="artwork called ReflexTOn"
-        {...sharedPictureProps}
+        title="Rockstar"
       />
     </div>
   </div>
 </Container>
-<style>
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-
-  /* Create four equal columns that sits next to each other */
-  .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-  }
-
-  /* This is not working */
-  /* .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-  } */
-
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
-</style>
