@@ -1,14 +1,17 @@
 import { defineConfig } from "astro/config";
 import { astroImageTools } from "astro-imagetools";
 import compress from "astro-compress";
+import robotsTxt from "astro-robots-txt";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
+import { WEBSITE_URL } from "./src/utils/constants.mjs";
 
 // https://astro.build/config
 export default defineConfig({
   experimental: { integrations: true },
   integrations: [
+    tailwind(),
     astroImageTools,
     compress({
       img: {
@@ -23,7 +26,7 @@ export default defineConfig({
            * CPU effort, between 0 (fastest) and 9 (slowest)
            * @default 4
            */
-          effort: 6,
+          effort: 1,
         },
         webp: {
           /**
@@ -54,7 +57,7 @@ export default defineConfig({
            * CPU effort, between 0 (fastest) and 6 (slowest)
            * @default 4
            */
-          effort: 5,
+          effort: 1,
 
           /**
            * Force WebP output, otherwise attempt to use input format
@@ -109,6 +112,7 @@ export default defineConfig({
     }),
     mdx(),
     sitemap(),
-    tailwind(),
+    robotsTxt(),
   ],
+  site: WEBSITE_URL,
 });

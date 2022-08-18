@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: [
     "./public/**/*.html",
@@ -6,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
+      },
       typography: {
         DEFAULT: {
           css: {
@@ -16,9 +21,6 @@ module.exports = {
           },
         },
       },
-    },
-    fontFamily: {
-      sans: ["Montserrat", "system-ui"],
     },
   },
   plugins: [require("flowbite/plugin"), require("flowbite-typography")],
