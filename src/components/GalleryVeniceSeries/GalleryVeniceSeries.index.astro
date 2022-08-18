@@ -1,0 +1,25 @@
+---
+import Container from "../Container.astro";
+import GalleryVeniceSeriesGroup1 from "./GalleryVeniceSeriesGroup1.astro";
+import GalleryVeniceSeriesGroup2 from "./GalleryVeniceSeriesGroup2.astro";
+import GalleryVeniceSeriesGroup3 from "./GalleryVeniceSeriesGroup3.astro";
+import GalleryVeniceSeriesGroup4 from "./GalleryVeniceSeriesGroup4.astro";
+import "../../styles/masonry.css";
+---
+
+<Container>
+  <div class="row">
+    <div class="column">
+      <GalleryVeniceSeriesGroup1 />
+    </div>
+    <div class="column">
+      <GalleryVeniceSeriesGroup2 />
+    </div>
+    <div class="column">
+      <GalleryVeniceSeriesGroup3 />
+    </div>
+    <div class="column">
+      <GalleryVeniceSeriesGroup4 />
+    </div>
+  </div>
+</Container>

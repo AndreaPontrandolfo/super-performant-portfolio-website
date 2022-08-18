@@ -1,0 +1,25 @@
+---
+import Container from "../Container.astro";
+import GalleryPaintingsSeriesGroup1 from "./GalleryPaintingsSeriesGroup1.astro";
+import GalleryPaintingsSeriesGroup2 from "./GalleryPaintingsSeriesGroup2.astro";
+import GalleryPaintingsSeriesGroup3 from "./GalleryPaintingsSeriesGroup3.astro";
+import GalleryPaintingsSeriesGroup4 from "./GalleryPaintingsSeriesGroup4.astro";
+import "../../styles/masonry.css";
+---
+
+<Container>
+  <div class="row">
+    <div class="column">
+      <GalleryPaintingsSeriesGroup1 />
+    </div>
+    <div class="column">
+      <GalleryPaintingsSeriesGroup2 />
+    </div>
+    <div class="column">
+      <GalleryPaintingsSeriesGroup3 />
+    </div>
+    <div class="column">
+      <GalleryPaintingsSeriesGroup4 />
+    </div>
+  </div>
+</Container>
