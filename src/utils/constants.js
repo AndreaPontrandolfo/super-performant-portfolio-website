@@ -1,1 +1,1 @@
-export const WEBSITE_URL = "www.lucapontrandolfo.com";
+export const WEBSITE_URL = "https://www.lucapontrandolfo.com";

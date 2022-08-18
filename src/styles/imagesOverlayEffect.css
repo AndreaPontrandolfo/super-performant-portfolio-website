@@ -1,15 +1,24 @@
 .picture-container {
   position: relative;
-}
-
-.picture-container,
-.picture-container .overlay,
-.picture-container picture,
-.picture-container picture::after,
-.picture-container img {
   border-radius: 0.375rem;
+  .overlay {
+    border-radius: 0.375rem;
+  }
+  picture {
+    border-radius: 0.375rem;
+    &::after {
+      border-radius: 0.375rem;
+    }
+  }
+  img {
+    border-radius: 0.375rem;
+  }
+  &:hover {
+    .overlay {
+      opacity: 1;
+    }
+  }
 }
-
 .overlay {
   position: absolute;
   z-index: 2;
@@ -24,11 +33,6 @@
   background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
   /* background: linear-gradient(to bottom, transparent 0%, black 100%); */
 }
-
-.picture-container:hover .overlay {
-  opacity: 1;
-}
-
 .text {
   color: white;
   font-size: 20px;
