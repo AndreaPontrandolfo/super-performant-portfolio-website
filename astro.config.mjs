@@ -5,13 +5,18 @@ import robotsTxt from "astro-robots-txt";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
+import prefetch from "@astrojs/prefetch";
+import { VitePWA } from "vite-plugin-pwa";
 import { WEBSITE_URL } from "./src/utils/constants.mjs";
 
 // https://astro.build/config
 export default defineConfig({
-  experimental: { integrations: true },
+  experimental: {
+    integrations: true,
+  },
   integrations: [
     tailwind(),
+    prefetch(),
     astroImageTools,
     compress({
       img: {
@@ -115,4 +120,7 @@ export default defineConfig({
     robotsTxt(),
   ],
   site: WEBSITE_URL,
+  vite: {
+    plugins: [VitePWA()],
+  },
 });

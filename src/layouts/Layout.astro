@@ -29,6 +29,7 @@ const { title } = Astro.props as Props;
     <script src="../../node_modules/flowbite/dist/flowbite.js">
       import "flowbite";
     </script>
+    <script src="../utils/pwa.ts"></script>
   </body>
 </html>
 <style>
@@ -43,7 +44,6 @@ const { title } = Astro.props as Props;
   }
 
   html {
-    /* font-family: "Montserrat", sans-serif; */
     font-size: var(--font-size-base);
     color: var(--color-text);
     background-color: var(--color-bg);
@@ -54,9 +54,4 @@ const { title } = Astro.props as Props;
     display: flex;
     flex-direction: column;
   }
-
-  /* :global(code) {
-    font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-      DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-  } */
 </style>
