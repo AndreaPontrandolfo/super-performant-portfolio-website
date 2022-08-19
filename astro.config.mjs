@@ -2,6 +2,7 @@ import { defineConfig } from "astro/config";
 import { astroImageTools } from "astro-imagetools";
 import compress from "astro-compress";
 import robotsTxt from "astro-robots-txt";
+import critters from "astro-critters";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
@@ -16,6 +17,7 @@ export default defineConfig({
   },
   integrations: [
     tailwind(),
+    mdx(),
     prefetch(),
     astroImageTools,
     compress({
@@ -115,7 +117,7 @@ export default defineConfig({
         },
       },
     }),
-    mdx(),
+    critters(),
     sitemap(),
     robotsTxt(),
   ],

@@ -16,6 +16,7 @@
     "@astrojs/tailwind": "^1.0.0",
     "astro": "^1.0.6",
     "astro-compress": "^0.0.17",
+    "astro-critters": "^1.0.1",
     "astro-imagetools": "^0.6.10",
     "astro-robots-txt": "^0.3.7",
     "autoprefixer": "^10.4.8",
