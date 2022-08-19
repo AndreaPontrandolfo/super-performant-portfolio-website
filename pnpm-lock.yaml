@@ -6,7 +6,7 @@ specifiers:
   '@astrojs/sitemap': ^1.0.0
   '@astrojs/tailwind': ^1.0.0
   '@fontsource/montserrat': ^4.5.12
-  astro: ^1.0.6
+  astro: 1.0.1
   astro-compress: ^0.0.17
   astro-critters: ^1.0.1
   astro-icon: ^0.7.3
@@ -34,10 +34,10 @@ devDependencies:
   '@astrojs/prefetch': 0.0.7
   '@astrojs/sitemap': 1.0.0
   '@astrojs/tailwind': 1.0.0
-  astro: 1.0.6
+  astro: 1.0.1
   astro-compress: 0.0.17
   astro-critters: 1.0.1
-  astro-imagetools: 0.6.10_astro@1.0.6
+  astro-imagetools: 0.6.10_astro@1.0.1
   astro-robots-txt: 0.3.7
   autoprefixer: 10.4.8_postcss@8.4.16
   flowbite-typography: 1.0.2_tailwindcss@3.1.8
@@ -100,7 +100,7 @@ packages:
     resolution: {integrity: sha512-yQIMvVjSMs4ZQHffT2nBgXiqVHKOwIgd6xC0o5XkcbXxyspxjRGpHyiAp/WKEdKsUeXwjVuL8b+6lhAYByd+lw==}
     dependencies:
       '@astrojs/micromark-extension-mdx-jsx': 1.0.3
-      '@astrojs/prism': 1.0.1
+      '@astrojs/prism': 1.0.0
       acorn: 8.8.0
       acorn-jsx: 5.3.2_acorn@8.8.0
       github-slugger: 1.4.0
@@ -170,13 +170,6 @@ packages:
 
   /@astrojs/prism/1.0.0:
     resolution: {integrity: sha512-hRsHDw/y4p7bFpq9XSeDTJtIvhdajU5ZahfAh+n9I7VKsKUHTYI3xTkImcXgkkUoEWs6UI0gk4GgJjiiLEgfYQ==}
-    engines: {node: ^14.18.0 || >=16.12.0}
-    dependencies:
-      prismjs: 1.28.0
-    dev: true
-
-  /@astrojs/prism/1.0.1:
-    resolution: {integrity: sha512-HxEFslvbv+cfOs51q/C7aMVFuW3EAGg0d1xXU/0e/QeScDzfrp5Ra4SOb8mV082SgENVjtVvet4zR84t3at4VQ==}
     engines: {node: ^14.18.0 || >=16.12.0}
     dependencies:
       prismjs: 1.28.0
@@ -2158,10 +2151,6 @@ packages:
       '@types/node': 17.0.45
     dev: true
 
-  /@types/resolve/1.20.2:
-    resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
-    dev: true
-
   /@types/sax/1.2.4:
     resolution: {integrity: sha512-pSAff4IAxJjfAXUG6tFkO7dsSbTmf8CtUpfhhZ5VhkRpC4628tJhh3+V6H1E+/Gs9piSzYKT5yzHO5M4GG9jkw==}
     dependencies:
@@ -2436,14 +2425,14 @@ packages:
       svgo: 2.8.0
     dev: false
 
-  /astro-imagetools/0.6.10_astro@1.0.6:
+  /astro-imagetools/0.6.10_astro@1.0.1:
     resolution: {integrity: sha512-b3+vCkud6HeWe3brUI7Rq/RXUPOtuv3GV/ENhd1+4mflISWgCWAEIFSTr+56R6/LUpMdh+ZlLjOQaCG5Ig1v7g==}
     engines: {node: ^14.15.0 || >=16.0.0}
     peerDependencies:
       astro: '>=0.26 || >=1.0.0-beta'
     dependencies:
       '@astropub/codecs': 0.4.4
-      astro: 1.0.6
+      astro: 1.0.1
       file-type: 17.1.1
       find-cache-dir: 3.3.2
       find-up: 6.3.0
@@ -2461,8 +2450,8 @@ packages:
       zod: 3.18.0
     dev: true
 
-  /astro/1.0.6:
-    resolution: {integrity: sha512-QAkdkzP3PbauiO4YnOgVTWY6z26heKruoXW9TnN8Bbmwtf7DUFIchi6CFSAVYSONX8XtRnj+p6fCkk06OWfJ4w==}
+  /astro/1.0.1:
+    resolution: {integrity: sha512-oQltZ7Yk+ShztRL5NO+nyXVIZqBHjlL6yn6oDeJ/a+6D/rN6KMZQquKP21j87nSwnSnEUjS73EsFsIEvrxG4Tw==}
     engines: {node: ^14.18.0 || >=16.12.0, npm: '>=6.14.0'}
     hasBin: true
     dependencies:
@@ -2518,7 +2507,7 @@ packages:
       tsconfig-resolver: 3.0.1
       unist-util-visit: 4.1.0
       vfile: 5.3.4
-      vite: 3.0.5
+      vite: 3.0.4
       yargs-parser: 21.1.1
       zod: 3.18.0
     transitivePeerDependencies:
@@ -8031,7 +8020,7 @@ packages:
     resolution: {integrity: sha512-ZHqlstlQF449v8glscGRXzL6l2dZvASPCdXJRWG4gHEZlUVx2Jtmr+a2zeVG4LCsKhDXKRj5R3h0C/98UcVAQg==}
     dependencies:
       '@types/json5': 0.0.30
-      '@types/resolve': 1.20.2
+      '@types/resolve': 1.17.1
       json5: 2.2.1
       resolve: 1.22.1
       strip-bom: 4.0.0
@@ -8399,8 +8388,8 @@ packages:
       - supports-color
     dev: true
 
-  /vite/3.0.5:
-    resolution: {integrity: sha512-bRvrt9Tw8EGW4jj64aYFTnVg134E8hgDxyl/eEHnxiGqYk7/pTPss6CWlurqPOUzqvEoZkZ58Ws+Iu8MB87iMA==}
+  /vite/3.0.4:
+    resolution: {integrity: sha512-NU304nqnBeOx2MkQnskBQxVsa0pRAH5FphokTGmyy8M3oxbvw7qAXts2GORxs+h/2vKsD+osMhZ7An6yK6F1dA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
