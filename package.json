@@ -1,7 +1,27 @@
 {
-  "name": "@example/basics",
-  "version": "0.0.1",
+  "name": "luca-pontrandolfo-website",
+  "description": "A website created to showcase Luca Pontrandolfo artworks.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Andrea Pontrandolfo",
+    "email": "andrea.pontra@gmail.com",
+    "url": "https://github.com/AndreaPontrandolfo"
+  },
+  "homepage": "https://www.lucapontrandolfo.com",
+  "repository": "https://github.com/AndreaPontrandolfo/super-performant-portfolio-website",
   "private": true,
+  "keywords": [
+    "astro",
+    "javascript",
+    "typescript",
+    "css",
+    "tailwind",
+    "performance",
+    "seo",
+    "postcss",
+    "html",
+    "pwa"
+  ],
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
