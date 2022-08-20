@@ -10,7 +10,6 @@ import prefetch from "@astrojs/prefetch";
 import { VitePWA } from "vite-plugin-pwa";
 import { WEBSITE_URL } from "./src/utils/constants.mjs";
 
-// https://astro.build/config
 export default defineConfig({
   experimental: {
     integrations: true,
@@ -22,62 +21,15 @@ export default defineConfig({
     astroImageTools,
     compress({
       img: {
-        avif: {
-          /**
-           * Quality, integer 1-100
-           * @default 50
-           */
-          quality: 60,
-
-          /**
-           * CPU effort, between 0 (fastest) and 9 (slowest)
-           * @default 4
-           */
-          effort: 1,
-        },
-        webp: {
-          /**
-           * Quality, integer 1-100
-           * @default 80
-           */
-          quality: 80,
-
-          /**
-           * Quality of alpha layer, integer 0-100
-           * @default 100
-           */
-          alphaQuality: 100,
-
-          /**
-           * Use near_lossless compression mode
-           * @default false
-           */
-          nearLossless: false,
-
-          /**
-           * Use high quality chroma subsampling
-           * @default false
-           */
-          smartSubsample: false,
-
-          /**
-           * CPU effort, between 0 (fastest) and 6 (slowest)
-           * @default 4
-           */
-          effort: 1,
-
-          /**
-           * Force WebP output, otherwise attempt to use input format
-           * @default true
-           */
-          force: true,
-        },
+        avif: false,
+        png: false,
+        webp: false,
         jpeg: {
           /**
            * Quality, integer 1-100
            * @default 80
            */
-          quality: 80,
+          quality: 70,
 
           /**
            * Use progressive (interlace) scan

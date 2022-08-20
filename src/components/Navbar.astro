@@ -57,7 +57,13 @@ const { currentRoute } = Astro.props as Props;
           <button
             id="dropdownNavbarLink"
             data-dropdown-toggle="dropdownNavbar"
-            class="flex justify-between items-center py-2 pr-4 pl-3 w-full format leading-none rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-800 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+            class={`flex justify-between items-center py-2 pr-4 pl-3 w-full format leading-none rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 ${
+              currentRoute === "Paintings" ||
+              currentRoute === "Venice Series" ||
+              currentRoute === "Turin Series"
+                ? "text-slate-800"
+                : ""
+            } md:hover:text-slate-800 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent`}
             >Collections
             <svg
               class="ml-1 w-5 h-5"

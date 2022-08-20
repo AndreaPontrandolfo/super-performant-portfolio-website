@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build && subfont -ir --no-fallbacks --root dist",
+    "build": "astro build  && subfont -ir --no-fallbacks --root dist",
     "preview": "astro preview",
     "astro": "astro"
   },

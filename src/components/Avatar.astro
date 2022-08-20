@@ -1,5 +1,14 @@
-<img
-  class="w-10 h-10 rounded-full"
-  src="/src/images/fotoPortrait.png"
-  alt="Rounded avatar"
-/>
+---
+import { Picture } from "astro-imagetools/components";
+import { sharedPictureProps } from "../utils/sharedPictureProps";
+---
+
+<div class="w-10 h-10 rounded-full overflow-hidden">
+  <Picture
+    src="/src/images/fotoPortrait.png"
+    alt="Luca Pontrandolfo portrait"
+    layout="fill"
+    width={60}
+    {...sharedPictureProps}
+  />
+</div>
