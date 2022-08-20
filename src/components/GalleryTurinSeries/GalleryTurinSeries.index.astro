@@ -1,13 +1,13 @@
 ---
-import Container from "../Container.astro";
 import GalleryTurinSeriesGroup1 from "./GalleryTurinSeriesGroup1.astro";
 import GalleryTurinSeriesGroup2 from "./GalleryTurinSeriesGroup2.astro";
 import GalleryTurinSeriesGroup3 from "./GalleryTurinSeriesGroup3.astro";
 import GalleryTurinSeriesGroup4 from "./GalleryTurinSeriesGroup4.astro";
+import ContainerGalleries from "../ContainerGalleries.astro";
 import "../../styles/masonry.css";
 ---
 
-<Container>
+<ContainerGalleries>
   <div class="row">
     <div class="column">
       <GalleryTurinSeriesGroup1 />
@@ -22,4 +22,4 @@ import "../../styles/masonry.css";
       <GalleryTurinSeriesGroup4 />
     </div>
   </div>
-</Container>
+</ContainerGalleries>

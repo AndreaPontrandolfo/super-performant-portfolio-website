@@ -1,5 +1,5 @@
 ---
-import Container from "../components/Container.astro";
+import ContainerTexts from "../components/ContainerTexts.astro";
 import Layout from "../layouts/Layout.astro";
 import { routes } from "../utils/constants.mjs";
 ---
@@ -9,7 +9,7 @@ import { routes } from "../utils/constants.mjs";
   description="Biografia e intenzioni di Luca Pontrandolfo."
   endpoint={routes.ABOUT}
 >
-  <Container>
+  <ContainerTexts>
     <div class="format">
       <div>
         <h2>Bio</h2>
@@ -70,5 +70,5 @@ import { routes } from "../utils/constants.mjs";
         </p>
       </div>
     </div>
-  </Container>
+  </ContainerTexts>
 </Layout>

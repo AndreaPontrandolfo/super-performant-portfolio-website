@@ -1,5 +1,4 @@
 ---
-import Container from "./Container.astro";
 import GalleryPaintingsSeriesGroup1 from "./GalleryPaintingsSeries/GalleryPaintingsSeriesGroup1.astro";
 import GalleryPaintingsSeriesGroup2 from "./GalleryPaintingsSeries/GalleryPaintingsSeriesGroup2.astro";
 import GalleryPaintingsSeriesGroup3 from "./GalleryPaintingsSeries/GalleryPaintingsSeriesGroup3.astro";
@@ -12,10 +11,11 @@ import GalleryVeniceSeriesGroup1 from "./GalleryVeniceSeries/GalleryVeniceSeries
 import GalleryVeniceSeriesGroup2 from "./GalleryVeniceSeries/GalleryVeniceSeriesGroup2.astro";
 import GalleryVeniceSeriesGroup3 from "./GalleryVeniceSeries/GalleryVeniceSeriesGroup3.astro";
 import GalleryVeniceSeriesGroup4 from "./GalleryVeniceSeries/GalleryVeniceSeriesGroup4.astro";
+import ContainerGalleries from "./ContainerGalleries.astro";
 import "../styles/masonry.css";
 ---
 
-<Container>
+<ContainerGalleries>
   <div class="row">
     <div class="column">
       <GalleryPaintingsSeriesGroup1 />
@@ -38,4 +38,4 @@ import "../styles/masonry.css";
       <GalleryTurinSeriesGroup4 />
     </div>
   </div>
-</Container>
+</ContainerGalleries>
