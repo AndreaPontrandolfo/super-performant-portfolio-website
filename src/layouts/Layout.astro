@@ -1,13 +1,17 @@
 ---
+import { Seo } from "astro-seo-meta";
 import Footer from "../components/Footer.astro";
 import Navbar from "../components/Navbar.astro";
 import "@fontsource/montserrat/variable.css";
+import { WEBSITE_URL } from "../utils/constants.mjs";
 
 export interface Props {
   title: string;
+  description: string;
+  endpoint?: string;
 }
 
-const { title } = Astro.props as Props;
+const { title, description, endpoint } = Astro.props as Props;
 ---
 
 <!DOCTYPE html>
@@ -15,9 +19,28 @@ const { title } = Astro.props as Props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <Seo
+      title={title}
+      description={description}
+      icon="/favicon.ico"
+      colorScheme="light"
+      keywords={[
+        "website",
+        "portfolio",
+        "art",
+        "artist",
+        "galleries",
+        "Venezia",
+        "Torino",
+        "astro",
+      ]}
+      facebook={{
+        image: "/src/images/fotoPortrait.png",
+        url: `${WEBSITE_URL}${endpoint ? endpoint : ""}`,
+        type: "website",
+      }}
+    />
   </head>
 
   <body>

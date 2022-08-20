@@ -1,4 +1,5 @@
 ---
+import { routes } from "../utils/constants.mjs";
 import Avatar from "./Avatar.astro";
 import NavbarDropdownItem from "./NavbarDropdownItem.astro";
 import NavbarItem from "./NavbarItem.astro";
@@ -13,7 +14,7 @@ const { currentRoute } = Astro.props as Props;
   class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 shadow-lg"
 >
   <div class="flex flex-wrap justify-between items-center mx-auto">
-    <a href="/" class="flex items-center">
+    <a href={routes.INDEX} class="flex items-center">
       <Avatar />
       <div class="ml-4">
         <h1 class="format self-center text-2xl text-gray-700 dark:text-white">
@@ -51,7 +52,10 @@ const { currentRoute } = Astro.props as Props;
       <ul
         class="flex flex-col items-center p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
       >
-        <NavbarItem text="Home" href="/" isActive={currentRoute === "Homepage"}
+        <NavbarItem
+          text="Home"
+          href="href={routes.INDEX}"
+          isActive={currentRoute === "Homepage"}
         />
         <li>
           <button
@@ -87,17 +91,17 @@ const { currentRoute } = Astro.props as Props;
               aria-labelledby="dropdownLargeButton"
             >
               <NavbarDropdownItem
-                href="/paintings/"
+                href={routes.PAINTINGS}
                 text="Paintings"
                 isActive={currentRoute === "Paintings"}
               />
               <NavbarDropdownItem
-                href="/veniceSeries/"
+                href={routes.VENICE}
                 text="Venice Series"
                 isActive={currentRoute === "Venice Series"}
               />
               <NavbarDropdownItem
-                href="/turinSeries/"
+                href={routes.TURIN}
                 text="Turin Series"
                 isActive={currentRoute === "Turin Series"}
               />
@@ -106,12 +110,12 @@ const { currentRoute } = Astro.props as Props;
         </li>
         <NavbarItem
           text="Contacts"
-          href="/contacts/"
+          href={routes.CONTACTS}
           isActive={currentRoute === "Contacts"}
         />
         <NavbarItem
           text="About"
-          href="/about/"
+          href={routes.ABOUT}
           isActive={currentRoute === "About"}
         />
       </ul>

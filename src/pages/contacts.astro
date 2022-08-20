@@ -3,9 +3,14 @@ import Layout from "../layouts/Layout.astro";
 import { Icon } from "astro-icon";
 import Container from "../components/Container.astro";
 import SocialsBar from "../components/SocialsBar.astro";
+import { routes } from "../utils/constants.mjs";
 ---
 
-<Layout title="Contacts">
+<Layout
+  title="Contacts"
+  description="Contatti di Luca Pontrandolfo."
+  endpoint={routes.CONTACTS}
+>
   <Container>
     <div class="format">
       <h2>Contatti</h2>

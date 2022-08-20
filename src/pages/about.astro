@@ -1,9 +1,14 @@
 ---
 import Container from "../components/Container.astro";
 import Layout from "../layouts/Layout.astro";
+import { routes } from "../utils/constants.mjs";
 ---
 
-<Layout title="About">
+<Layout
+  title="About"
+  description="Biografia e intenzioni di Luca Pontrandolfo."
+  endpoint={routes.ABOUT}
+>
   <Container>
     <div class="format">
       <div>

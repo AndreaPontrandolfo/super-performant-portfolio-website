@@ -1,0 +1,13 @@
+---
+import GalleryVeniceSeries from "../components/GalleryVeniceSeries/GalleryVeniceSeries.index.astro";
+import Layout from "../layouts/Layout.astro";
+import { routes } from "../utils/constants.mjs";
+---
+
+<Layout
+  title="Venice Series"
+  description="Galleria di opere dell'autore raffiguranti fotografie di Venezia modificate digitalmente."
+  endpoint={routes.VENICE}
+>
+  <GalleryVeniceSeries />
+</Layout>

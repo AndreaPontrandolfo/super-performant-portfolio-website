@@ -4,9 +4,14 @@ import MainGallery from "../components/MainGallery.astro";
 import LandingHero from "../components/LandingHero.astro";
 import HeroText from "../components/HeroText.astro";
 import ContentPointer from "../components/ContentPointer.astro";
+import { routes } from "../utils/constants.mjs";
 ---
 
-<Layout title="Homepage">
+<Layout
+  title="Homepage"
+  description="Galleria d'arte digitale dell'autore Luca Pontrandolfo."
+  endpoint={routes.INDEX}
+>
   <ContentPointer />
   <LandingHero>
     <div class="image-gradient h-screen">
