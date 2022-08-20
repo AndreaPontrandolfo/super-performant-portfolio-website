@@ -12,7 +12,13 @@ const { src, title } = Astro.props as Props;
 
 <div class="picture-container mb-2">
   <Picture src={src} alt={`artwork called ${title}`} {...sharedPictureProps} />
-  <div class="overlay">
-    <div class="text format">{title}</div>
+  <div
+    class="overlay absolute inset-0 z-[2] h-full w-full opacity-0 transition duration-300 ease-out"
+  >
+    <div
+      class="text-white text-xl absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] text-center format"
+    >
+      {title}
+    </div>
   </div>
 </div>
