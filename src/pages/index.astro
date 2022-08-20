@@ -1,16 +1,27 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import MainGallery from "../components/MainGallery.astro";
-import Slideshow from "../components/Slideshow.astro";
+import LandingHero from "../components/LandingHero.astro";
 import HeroText from "../components/HeroText.astro";
+import ContentPointer from "../components/ContentPointer.astro";
 ---
 
 <Layout title="Homepage">
-  <Slideshow>
-    <div class="flex items-center w-screen h-screen format text-5xl">
+  <ContentPointer />
+  <LandingHero>
+    <div class="image-gradient h-screen">
       <HeroText />
     </div>
-  </Slideshow>
-  <Slideshow />
+  </LandingHero>
   <MainGallery />
 </Layout>
+<style>
+  .image-gradient {
+    background: rgb(24, 32, 36);
+    background: linear-gradient(
+      118deg,
+      rgba(24, 32, 36, 1) 0%,
+      rgba(0, 0, 0, 0.2945553221288515) 100%
+    );
+  }
+</style>
