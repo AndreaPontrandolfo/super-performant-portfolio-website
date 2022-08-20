@@ -5,8 +5,15 @@ import { BackgroundPicture } from "astro-imagetools/components";
 
 <BackgroundPicture
   src="/src/images/firstgallery/3Through.png"
-  objectPosition="50% 80%"
+  objectPosition="80% 80%"
   {...sharedPictureProps}
+  artDirectives={[
+    {
+      media: "(min-aspect-ratio: 3/2)",
+      src: "/src/images/firstgallery/3Through.png",
+      objectPosition: "50% 80%",
+    },
+  ]}
 >
   <slot />
 </BackgroundPicture>
