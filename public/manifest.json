@@ -5,5 +5,12 @@
   "display": "standalone",
   "background_color": "#ffffff",
   "lang": "en",
-  "scope": "/"
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/manifest_icon.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    }
+  ]
 }
