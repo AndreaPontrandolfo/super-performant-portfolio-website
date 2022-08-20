@@ -20,11 +20,13 @@ const { title, description, endpoint } = Astro.props as Props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <link rel="manifest" href="/manifest.json" />
     <Seo
       title={title}
       description={description}
       icon="/favicon.ico"
       colorScheme="light"
+      themeColor="#000000"
       keywords={[
         "website",
         "portfolio",
