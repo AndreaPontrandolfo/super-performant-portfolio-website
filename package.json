@@ -25,7 +25,8 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build  && subfont -ir --no-fallbacks --root dist",
+    "build": "npm install -g pnpm && pnpm i && pnpm run buildlocal",
+    "buildlocal": "astro build  && subfont -ir --no-fallbacks --root dist",
     "preview": "astro preview",
     "astro": "astro"
   },
