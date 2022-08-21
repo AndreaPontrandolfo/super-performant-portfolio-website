@@ -14,14 +14,16 @@ const { currentRoute } = Astro.props as Props;
   class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 shadow-lg"
 >
   <div class="flex flex-wrap justify-between items-center mx-auto">
-    <a href={routes.INDEX} class="flex items-center">
-      <Avatar />
-      <div class="ml-4">
-        <h1 class="format self-center text-2xl text-gray-700 dark:text-white">
-          Luca Pontrandolfo
-        </h1>
-      </div>
-    </a>
+    <header>
+      <a href={routes.INDEX} class="flex items-center">
+        <Avatar />
+        <div class="ml-4">
+          <h1 class="format self-center text-2xl text-gray-700 dark:text-white">
+            Luca Pontrandolfo
+          </h1>
+        </div>
+      </a>
+    </header>
     <div class="flex">
       <button
         data-collapse-toggle="navbar-sticky"
