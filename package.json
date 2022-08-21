@@ -56,6 +56,7 @@
     "astro-seo-meta": "^0.0.2",
     "flowbite": "^1.5.2"
   },
+  "browserslist": "> 0.2%, last 2 versions, not dead",
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": [
