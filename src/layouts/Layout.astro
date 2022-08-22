@@ -18,11 +18,11 @@ const { title, description, endpoint } = Astro.props as Props;
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
     <link rel="manifest" href="/manifest.json" />
     <Seo
-      title={title}
+      title={`Luca Pontrandolfo - ${title}`}
       description={description}
       icon="/favicon.ico"
       colorScheme="light"
@@ -51,10 +51,14 @@ const { title, description, endpoint } = Astro.props as Props;
 
   <body>
     <Navbar currentRoute={title} />
-    <main>
+    <main id="swup" class="transition-fade-anim">
       <slot />
     </main>
     <Footer />
+    <script>
+      import Swup from "swup";
+      const swup = new Swup();
+    </script>
     <script src="../../node_modules/flowbite/dist/flowbite.js">
       import "flowbite";
     </script>
@@ -82,5 +86,14 @@ const { title, description, endpoint } = Astro.props as Props;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+  }
+
+  .transition-fade-anim {
+    transition: 0.3s;
+    opacity: 1;
+  }
+
+  html.is-animating .transition-fade-anim {
+    opacity: 0;
   }
 </style>

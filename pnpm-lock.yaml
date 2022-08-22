@@ -21,6 +21,7 @@ specifiers:
   prettier-plugin-astro: ^0.5.0
   rollup: ^2.78.0
   subfont: ^6.9.0
+  swup: ^2.0.18
   tailwindcss: ^3.1.8
   vite-plugin-pwa: ^0.12.3
   workbox-window: ^6.5.4
@@ -30,6 +31,7 @@ dependencies:
   astro-icon: 0.7.3
   astro-seo-meta: 0.0.2_astro@1.0.1
   flowbite: 1.5.2
+  swup: 2.0.18
 
 devDependencies:
   '@astrojs/mdx': 0.8.1_rollup@2.78.0
@@ -3234,6 +3236,12 @@ packages:
     engines: {node: '>=0.4.0'}
     dev: true
 
+  /delegate-it/3.0.1:
+    resolution: {integrity: sha512-XU8H4pjDGBW74hFIbjdLPnvtU3HF3P9bbZvoFBSBLb5JgNaTkRb/2lvC1V+9kmZsxVR0kad4bU3rYhQ/4Ij+Gw==}
+    dependencies:
+      typed-query-selector: 2.6.1
+    dev: false
+
   /dequal/2.0.3:
     resolution: {integrity: sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==}
     engines: {node: '>=6'}
@@ -5835,6 +5843,11 @@ packages:
       is-wsl: 2.2.0
     dev: true
 
+  /opencollective-postinstall/2.0.3:
+    resolution: {integrity: sha512-8AV/sCtuzUeTo8gQK5qDZzARrulB3egtLzFgteqB2tcT4Mw7B8Kt7JcDHmltjz6FOAHsvTevk70gZEbhM4ZS9Q==}
+    hasBin: true
+    dev: false
+
   /optionator/0.8.3:
     resolution: {integrity: sha512-+IW9pACdk3XWmmTXG8m3upGUJst5XRGzxMRjXzAuJ1XnIFNvfhjjIuYkDvysnPQ7qzqVzLt78BCruntqRhWQbA==}
     engines: {node: '>= 0.8.0'}
@@ -7454,6 +7467,14 @@ packages:
       picocolors: 1.0.0
       stable: 0.1.8
 
+  /swup/2.0.18:
+    resolution: {integrity: sha512-EvmvDQPhEdPbDIYxaVDTU0Fz1yONvP1WcYA28zuFIz5ocyGH8vE9+Bth2Lum9vIgMAYgvwm+uu/ru1es/M3S9g==}
+    requiresBuild: true
+    dependencies:
+      delegate-it: 3.0.1
+      opencollective-postinstall: 2.0.3
+    dev: false
+
   /symbol-tree/3.2.4:
     resolution: {integrity: sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==}
     dev: true
@@ -7713,6 +7734,10 @@ packages:
   /type-fest/2.18.1:
     resolution: {integrity: sha512-UKCINsd4qiATXD6OIlnQw9t1ux/n2ld+Nl0kzPbCONhCaUIS/BhJbNw14w6584HCQWf3frBK8vmWnGZq/sbPHQ==}
     engines: {node: '>=12.20'}
+
+  /typed-query-selector/2.6.1:
+    resolution: {integrity: sha512-nzzcDrI0nncM5XTNyqeG7MrcXTx8lelUtNlTP+NvpnOfRzApyr+ZW4H/FoOaPfzmjn++Tf0ZxXpBN7Q3FN3ERw==}
+    dev: false
 
   /typescript/4.6.4:
     resolution: {integrity: sha512-9ia/jWHIEbo49HfjrLGfKbZSuWo9iTMwXO+Ca3pRsSpbsMbc7/IU8NKdCZVRRBafVPGnoJeFL76ZOAA84I9fEg==}

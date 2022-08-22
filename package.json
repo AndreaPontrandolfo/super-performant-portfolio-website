@@ -54,9 +54,14 @@
     "@fontsource/montserrat": "^4.5.12",
     "astro-icon": "^0.7.3",
     "astro-seo-meta": "^0.0.2",
-    "flowbite": "^1.5.2"
+    "flowbite": "^1.5.2",
+    "swup": "^2.0.18"
   },
-  "browserslist": "> 0.2%, last 2 versions, not dead",
+  "browserslist": [
+    "> 0.2%",
+    "last 2 versions",
+    "not dead"
+  ],
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": [
