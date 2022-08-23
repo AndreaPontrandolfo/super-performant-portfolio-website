@@ -13,7 +13,7 @@ const { currentRoute } = Astro.props as Props;
 <nav
   class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 shadow-lg"
 >
-  <div class="flex flex-wrap justify-between items-center mx-auto">
+  <div class="flex flex-wrap justify-between items-center mx-auto max-w-5xl">
     <header>
       <a href={routes.INDEX} class="flex items-center" rel="prefetch">
         <Avatar />
@@ -52,7 +52,7 @@ const { currentRoute } = Astro.props as Props;
       id="navbar-sticky"
     >
       <ul
-        class="flex flex-col items-center p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+        class="flex flex-col items-center p-4 xl:pr-0 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
       >
         <NavbarItem
           text="Home"
