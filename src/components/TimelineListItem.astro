@@ -1,0 +1,35 @@
+---
+import BaseIcon from "./BaseIcon.astro";
+export interface Props {
+  exhibitionName: string;
+  location: string;
+  date?: string;
+}
+
+const { exhibitionName, location, date } = Astro.props as Props;
+---
+
+<li class="mb-10 ml-6">
+  <span
+    class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-zinc-100 rounded-full ring-8 ring-zinc-200"
+  >
+    <BaseIcon
+      name="ph:medal-fill"
+      title="medal icon"
+      sizes={3}
+      color="text-amber-500"
+    />
+  </span>
+  <header class="-translate-y-[5px]">
+    <h3 class="flex items-center text-lg font-semibold text-gray-900">
+      {exhibitionName}
+    </h3>
+    <!-- <time
+    class="block mb-2 text-sm font-normal leading-none text-gray-400 "
+    >{date}
+  </time> -->
+    <h4 class="mb-4 text-base font-normal text-gray-500">
+      {location}
+    </h4>
+  </header>
+</li>

@@ -1,5 +1,6 @@
 ---
 import ContainerTexts from "../components/ContainerTexts.astro";
+import TimelineListItem from "../components/TimelineListItem.astro";
 import Layout from "../layouts/Layout.astro";
 import { routes } from "../utils/constants.mjs";
 ---
@@ -10,65 +11,118 @@ import { routes } from "../utils/constants.mjs";
   endpoint={routes.ABOUT}
 >
   <ContainerTexts>
-    <div class="format">
-      <div>
-        <h2>Bio</h2>
-        <p>
-          Luca Pontrandolfo, artista contemporaneo, vive e lavora a Torino
-          (Italia) Diplomato all’ “Accademia Albertina di Belle Arti” di Torino,
-          oltre a studi, con professionisti, in Computer Grafica e Fotografia.
-        </p>
-        <p>
-          L.P. lavora essenzialmente in Computer Grafica, Mixed Media su tela,
-          pittura ad Acrilici, Lightbox. Ha partecipato con i propri lavori in
-          varie Mostre collettive e Premi Nazionali e internazionali tra cui:
-        </p>
-        <ul>
-          <li>“Badiani Art Space”, London (GB)</li>
-          <li>“Lau_Notari Art Studio”, Hilversum/Amsterdam (NL)</li>
-          <li>“Caboto 35”, Torino</li>
-          <li>Mostra Internazionale “Italia Arte”, Villa Gualino, Torino</li>
-          <li>“Athensart” International Art Exhibition, Athens (GR)</li>
-          <li>Galleria “San Gregorio Art Gallery”, Venezia</li>
-          <li>Mostra “Unione” “Elle Galleria”, Preganziol (TV)</li>
-          <li>“1° “Biennale d’Arte” Genovarte (GE)</li>
-          <li>
-            II Ed.“PremioCeleste” per la pittura figurativa, San Gimignano (SI)
-          </li>
-          <li>10° Premio “Saturarte”, Genova</li>
-          <li>“Premio Internazionale Espoarte”, Albissola Marina (SV)</li>
-          <li>
-            “XXVI Rassegna d’Arte Internazionale “La Telaccia d’oro”, Torino
-          </li>
-          <li>Mostra “L’uomo e il mare”, Savona</li>
-          <li>“ 3° Concorso di pittura, Città di Venaria Reale (TO)</li>
-          <li>“Mostra Art Studio “Galleria Abaco”, Torino</li>
-          <li>“Il Quadrifoglio”, Rivoli (TO)</li>
-          <li>“Mostra di pittura Art Studio”, Torino</li>
-          <li>“International Mail Project” CARISMA, Torino</li>
-        </ul>
+    <section class="format">
+      <h2>Bio</h2>
+      <p>
+        Luca Pontrandolfo, artista contemporaneo, vive e lavora a Torino
+        (Italia) Diplomato all’ “Accademia Albertina di Belle Arti” di Torino,
+        oltre a studi, con professionisti, in Computer Grafica e Fotografia.
+      </p>
+      <p>
+        L.P. lavora essenzialmente in Computer Grafica, Mixed Media su tela,
+        pittura ad Acrilici, Lightbox. Ha partecipato con i propri lavori in
+        varie Mostre collettive e Premi Nazionali e internazionali tra cui:
+      </p>
+    </section>
+    <hr class="my-10" />
+    <section>
+      <header class="format mb-8">
+        <h2>Partecipazioni</h2>
+      </header>
+      <div class="ml-5">
+        <ol class="relative border-l border-gray-200">
+          <TimelineListItem
+            exhibitionName="Badiani Art Space"
+            location="London (GB)"
+          />
+          <TimelineListItem
+            exhibitionName="Lau_Notari Art Studio"
+            location="Hilversum/Amsterdam (NL)"
+          />
+          <TimelineListItem exhibitionName="Caboto 35" location="Torino (TO)" />
+          <TimelineListItem
+            exhibitionName="Mostra Internazionale “Italia Arte”"
+            location="Villa Gualino, Torino"
+          />
+          <TimelineListItem
+            exhibitionName="“Athensart” International Art Exhibition"
+            location="Athens (GR)"
+          />
+          <TimelineListItem
+            exhibitionName="Galleria “San Gregorio Art Gallery”"
+            location="Venezia"
+          />
+          <TimelineListItem
+            exhibitionName="Mostra “Unione” “Elle Galleria”"
+            location="Preganziol (TV)"
+          />
+          <TimelineListItem
+            exhibitionName="“1° “Biennale d’Arte”"
+            location="Genovarte (GE)"
+          />
+          <TimelineListItem
+            exhibitionName="II Ed.“PremioCeleste” per la pittura figurativa"
+            location="San Gimignano (SI)"
+          />
+          <TimelineListItem
+            exhibitionName="10° Premio “Saturarte”"
+            location="Genova"
+          />
+          <TimelineListItem
+            exhibitionName="“Premio Internazionale Espoarte”"
+            location="Albissola Marina (SV)"
+          />
+          <TimelineListItem
+            exhibitionName="“XXVI Rassegna d’Arte Internazionale “La Telaccia d’oro”"
+            location="Torino"
+          />
+          <TimelineListItem
+            exhibitionName="Mostra “L’uomo e il mare”"
+            location="Savona"
+          />
+          <TimelineListItem
+            exhibitionName="3° Concorso di pittura"
+            location="Città di Venaria Reale (TO)"
+          />
+          <TimelineListItem
+            exhibitionName="“Mostra Art Studio “, Galleria Abaco"
+            location="Torino"
+          />
+          <TimelineListItem
+            exhibitionName="“Il Quadrifoglio”"
+            location="Rivoli (TO)"
+          />
+          <TimelineListItem
+            exhibitionName="Mostra di pittura Art Studio"
+            location="Torino"
+          />
+          <TimelineListItem
+            exhibitionName="“International Mail Project” CARISMA"
+            location="Torino"
+          />
+        </ol>
       </div>
-      <hr />
-      <div>
-        <h2>Note Stilistiche</h2>
-        <p>
-          La ricerca artistica di L.P. si sviluppa in termini prettamente
-          figurativi, attingendo alla linfa dei movimenti del Novecento, in
-          particolare Metafisica e Pop Art.
-        </p>
-        <p>
-          Usando metodi e tecniche della percezione dell’immagine e della
-          comunicazione, tende a creare un modo personale di rappresentazione di
-          idee e soggetti. L’obiettivo finale di ogni artista e’ dare emozioni
-          attraverso il proprio lavoro.
-        </p>
-        <p>
-          L.P. e’ artista che ama sperimentare nuove tecniche e immaginare mondi
-          diversi nello spazio intermedio tra surrealismo e visione. Una tecnica
-          figurativa per un contenuto da interpretare e sicuramente moderno, che
-          sta tra ambiente, ecologia, universo e l’Uomo…(G.F.)
-        </p>
-      </div>
-    </div>
+    </section>
+    <hr class="my-10" />
+    <section class="format">
+      <h2>Note Stilistiche</h2>
+      <p>
+        La ricerca artistica di L.P. si sviluppa in termini prettamente
+        figurativi, attingendo alla linfa dei movimenti del Novecento, in
+        particolare Metafisica e Pop Art.
+      </p>
+      <p>
+        Usando metodi e tecniche della percezione dell’immagine e della
+        comunicazione, tende a creare un modo personale di rappresentazione di
+        idee e soggetti. L’obiettivo finale di ogni artista e’ dare emozioni
+        attraverso il proprio lavoro.
+      </p>
+      <p>
+        L.P. e’ artista che ama sperimentare nuove tecniche e immaginare mondi
+        diversi nello spazio intermedio tra surrealismo e visione. Una tecnica
+        figurativa per un contenuto da interpretare e sicuramente moderno, che
+        sta tra ambiente, ecologia, universo e l’Uomo…(G.F.)
+      </p>
+    </section>
   </ContainerTexts>
 </Layout>
