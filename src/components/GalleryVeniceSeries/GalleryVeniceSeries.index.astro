@@ -4,22 +4,13 @@ import GalleryVeniceSeriesGroup2 from "./GalleryVeniceSeriesGroup2.astro";
 import GalleryVeniceSeriesGroup3 from "./GalleryVeniceSeriesGroup3.astro";
 import GalleryVeniceSeriesGroup4 from "./GalleryVeniceSeriesGroup4.astro";
 import ContainerGalleries from "../ContainerGalleries.astro";
-import "../../styles/masonry.css";
 ---
 
 <ContainerGalleries>
-  <div class="row">
-    <div class="column">
-      <GalleryVeniceSeriesGroup1 />
-    </div>
-    <div class="column">
-      <GalleryVeniceSeriesGroup2 />
-    </div>
-    <div class="column">
-      <GalleryVeniceSeriesGroup3 />
-    </div>
-    <div class="column">
-      <GalleryVeniceSeriesGroup4 />
-    </div>
+  <div class="columns-3xs xl:columns-4">
+    <GalleryVeniceSeriesGroup1 />
+    <GalleryVeniceSeriesGroup2 />
+    <GalleryVeniceSeriesGroup3 />
+    <GalleryVeniceSeriesGroup4 />
   </div>
 </ContainerGalleries>

@@ -12,30 +12,21 @@ import GalleryVeniceSeriesGroup2 from "./GalleryVeniceSeries/GalleryVeniceSeries
 import GalleryVeniceSeriesGroup3 from "./GalleryVeniceSeries/GalleryVeniceSeriesGroup3.astro";
 import GalleryVeniceSeriesGroup4 from "./GalleryVeniceSeries/GalleryVeniceSeriesGroup4.astro";
 import ContainerGalleries from "./ContainerGalleries.astro";
-import "../styles/masonry.css";
 ---
 
 <ContainerGalleries>
-  <div class="row">
-    <div class="column">
-      <GalleryPaintingsSeriesGroup1 />
-      <GalleryVeniceSeriesGroup1 />
-      <GalleryTurinSeriesGroup1 />
-    </div>
-    <div class="column">
-      <GalleryPaintingsSeriesGroup2 />
-      <GalleryVeniceSeriesGroup2 />
-      <GalleryTurinSeriesGroup2 />
-    </div>
-    <div class="column">
-      <GalleryPaintingsSeriesGroup3 />
-      <GalleryVeniceSeriesGroup3 />
-      <GalleryTurinSeriesGroup3 />
-    </div>
-    <div class="column">
-      <GalleryPaintingsSeriesGroup4 />
-      <GalleryVeniceSeriesGroup4 />
-      <GalleryTurinSeriesGroup4 />
-    </div>
+  <div class="columns-3xs xl:columns-4">
+    <GalleryPaintingsSeriesGroup1 />
+    <GalleryVeniceSeriesGroup1 />
+    <GalleryTurinSeriesGroup1 />
+    <GalleryPaintingsSeriesGroup2 />
+    <GalleryVeniceSeriesGroup2 />
+    <GalleryTurinSeriesGroup2 />
+    <GalleryPaintingsSeriesGroup3 />
+    <GalleryVeniceSeriesGroup3 />
+    <GalleryTurinSeriesGroup3 />
+    <GalleryPaintingsSeriesGroup4 />
+    <GalleryVeniceSeriesGroup4 />
+    <GalleryTurinSeriesGroup4 />
   </div>
 </ContainerGalleries>
