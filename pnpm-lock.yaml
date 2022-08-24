@@ -6,6 +6,7 @@ specifiers:
   '@astrojs/sitemap': ^1.0.0
   '@astrojs/tailwind': ^1.0.0
   '@fontsource/montserrat': ^4.5.12
+  '@fontsource/playfair-display': ^4.5.11
   astro: 1.0.1
   astro-compress: ^1.0.3
   astro-critters: ^1.0.1
@@ -28,6 +29,7 @@ specifiers:
 
 dependencies:
   '@fontsource/montserrat': 4.5.12
+  '@fontsource/playfair-display': 4.5.11
   astro-icon: 0.7.3
   astro-seo-meta: 0.0.2_astro@1.0.1
   flowbite: 1.5.2
@@ -1376,6 +1378,10 @@ packages:
 
   /@fontsource/montserrat/4.5.12:
     resolution: {integrity: sha512-UQ+4ijm1sddIBtmEZ9bKgCB1rSi4Imog0YKz7wDLtMQ3Mw2ZaBseTgoLDfbWnfdowS0PLp+Z4T2KZ/1AySTlDQ==}
+    dev: false
+
+  /@fontsource/playfair-display/4.5.11:
+    resolution: {integrity: sha512-U9mhWeTBKmxebeaNxZT/38Wux1AA3eXOqsngdzuk2uH/uyykpS6YX11RvNCk4Pg/1IL6LAqgZh7JWS7TVFAdnA==}
     dev: false
 
   /@gustavnikolaj/async-main-wrap/3.0.1:
