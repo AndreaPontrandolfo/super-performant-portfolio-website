@@ -20,6 +20,14 @@ module.exports = {
             },
           },
         },
+        lg: {
+          css: {
+            p: {
+              marginTop: "0.9em",
+              marginBottom: "0.9em",
+            },
+          },
+        },
       },
     },
   },
