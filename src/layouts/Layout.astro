@@ -58,27 +58,8 @@ const { title, description, endpoint } = Astro.props as Props;
       <slot />
     </main>
     <Footer />
-    <script>
-      import Swup from "swup";
-      const swup = new Swup();
-    </script>
-    <script src="../../node_modules/flowbite/dist/flowbite.js">
-      import "flowbite";
-    </script>
-    <!-- <script>
-      window.alert("THIS");
-      window.addEventListener("locationchange", (event) => {
-        console.log(
-          "🚀 ~ file: Layout.astro ~ line 72 ~ window.addEventListener ~ event",
-          event
-        );
-        const dropdown = document.getElementById("dropdownNavbar");
-        if (dropdown.classList.contains("block")) {
-          dropdown.classList.remove("block");
-          dropdown.classList.add("hidden");
-        }
-      });
-    </script> -->
+    <script type="module" src="./public/app.js"></script>
+
     <script src="../utils/pwa.ts"></script>
   </body>
 </html>
