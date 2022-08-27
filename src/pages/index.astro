@@ -12,21 +12,6 @@ import { routes } from "../utils/constants.mjs";
   description="Digital art gallery of the author Luca Pontrandolfo."
   endpoint={routes.INDEX}
 >
-  <ContentPointer />
-  <LandingHero>
-    <div class="image-gradient h-screen">
-      <HeroText />
-    </div>
-  </LandingHero>
-  <MainGallery />
+  <!-- <ContentPointer /> -->
+  <LandingHero><MainGallery /></LandingHero>
 </Layout>
-<style>
-  .image-gradient {
-    background: rgb(24, 32, 36);
-    background: linear-gradient(
-      118deg,
-      rgba(24, 32, 36, 1) 0%,
-      rgba(0, 0, 0, 0.2945553221288515) 100%
-    );
-  }
-</style>

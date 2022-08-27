@@ -1,19 +1,102 @@
 ---
-import { sharedPictureProps } from "../utils/sharedPictureProps";
-import { BackgroundPicture } from "astro-imagetools/components";
+import { BackgroundPicture, Picture } from "astro-imagetools/components";
+import HeroText from "./HeroText.astro";
 ---
 
-<BackgroundPicture
-  src="/src/images/firstgallery/3Through.png"
-  objectPosition="80% 80%"
-  {...sharedPictureProps}
-  artDirectives={[
-    {
-      media: "(min-aspect-ratio: 3/2)",
-      src: "/src/images/firstgallery/3Through.png",
-      objectPosition: "50% 80%",
-    },
-  ]}
->
-  <slot />
-</BackgroundPicture>
+<div class="parallax-container">
+  <BackgroundPicture
+    src="/src/images/3Through_background.png"
+    objectPosition="80% 80%"
+    flatten={true}
+    format={["avif", "webp"]}
+    loading="eager"
+    preload="webp"
+    attributes={{
+      container: {
+        style: "position: relative;transform-style: preserve-3d;height: 100vh;",
+      },
+    }}
+    formatOptions={{
+      jpg: {
+        quality: 100,
+      },
+      webp: {
+        quality: 80,
+      },
+    }}
+    fallbackFormat="jpg"
+    includeSourceFormat={false}
+    artDirectives={[
+      // {
+      //   media: "(min-aspect-ratio: 3/2)",
+      //   src: "/src/images/3Through_background.png",
+      //   objectPosition: "50% 80%",
+      // },
+    ]}
+  >
+    <BackgroundPicture
+      src="/src/images/3Through_foreground.png"
+      flatten={false}
+      format={["avif", "webp"]}
+      objectPosition="100% 100%"
+      loading="eager"
+      preload="webp"
+      attributes={{
+        container: {
+          style:
+            "position:absolute;transform: translateZ(1px) scale(1);z-index: -1;top: 25%;left: -8%",
+        },
+      }}
+      formatOptions={{
+        jpg: {
+          quality: 100,
+        },
+        webp: {
+          quality: 80,
+        },
+      }}
+      fallbackFormat="png"
+      includeSourceFormat={true}
+      artDirectives={[
+        // {
+        //   media: "(min-aspect-ratio: 3/2)",
+        //   src: "/src/images/3Through_foreground.png",
+        //   objectPosition: "50% 80%",
+        // },
+      ]}
+      ><div class="w-screen h-screen"></div>
+    </BackgroundPicture>
+  </BackgroundPicture>
+  <!-- <section class="w-screen h-56 relative z-50 bg-white"></section> -->
+  <section class="no-parallax bg-white pt-12">
+    <slot />
+  </section>
+</div>
+
+<!-- <div class="image-gradient h-screen">
+  <HeroText />
+</div> -->
+<style>
+  .image-gradient {
+    background: rgb(24, 32, 36);
+    background: linear-gradient(
+      118deg,
+      rgba(24, 32, 36, 1) 0%,
+      rgba(0, 0, 0, 0.2945553221288515) 100%
+    );
+  }
+
+  .no-parallax {
+    transform-style: preserve-3d;
+    position: relative;
+  }
+
+  .parallax-container {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 3px;
+  }
+</style>
+
+<!-- objectPosition="80% 73%" -->
