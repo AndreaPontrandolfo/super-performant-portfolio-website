@@ -1,12 +1,14 @@
 ---
 import { sharedPictureProps } from "../utils/sharedPictureProps";
 import { BackgroundPicture } from "astro-imagetools/components";
+import HeroText from "./HeroText.astro";
 ---
 
 <BackgroundPicture
   src="/src/images/firstgallery/3Through.png"
   objectPosition="80% 80%"
   {...sharedPictureProps}
+  loading="eager"
   artDirectives={[
     {
       media: "(min-aspect-ratio: 3/2)",
@@ -15,5 +17,17 @@ import { BackgroundPicture } from "astro-imagetools/components";
     },
   ]}
 >
-  <slot />
+  <div class="image-gradient h-screen">
+    <HeroText />
+  </div>
 </BackgroundPicture>
+<style>
+  .image-gradient {
+    background: rgb(24, 32, 36);
+    background: linear-gradient(
+      118deg,
+      rgba(24, 32, 36, 1) 0%,
+      rgba(0, 0, 0, 0.2945553221288515) 100%
+    );
+  }
+</style>
