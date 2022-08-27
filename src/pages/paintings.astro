@@ -1,13 +1,13 @@
 ---
 import GalleryPaintingsSeries from "../components/GalleryPaintingsSeries/GalleryPaintingsSeries.index.astro";
-import Layout from "../layouts/Layout.astro";
+import Base from "../layouts/Base.astro";
 import { routes } from "../utils/constants.mjs";
 ---
 
-<Layout
+<Base
   title="Paintings"
   description="Gallery of works by the author depicting hand-painted paintings."
   endpoint={routes.PAINTINGS}
 >
   <GalleryPaintingsSeries />
-</Layout>
+</Base>

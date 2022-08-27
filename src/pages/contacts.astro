@@ -1,12 +1,12 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Base from "../layouts/Base.astro";
 import { Icon } from "astro-icon";
 import SocialsBar from "../components/SocialsBar.astro";
 import { routes } from "../utils/constants.mjs";
 import ContainerTexts from "../components/ContainerTexts.astro";
 ---
 
-<Layout
+<Base
   title="Contacts"
   description="Contacts of Luca Pontrandolfo."
   endpoint={routes.CONTACTS}
@@ -29,4 +29,4 @@ import ContainerTexts from "../components/ContainerTexts.astro";
       <div class="mt-5"><SocialsBar /></div>
     </div>
   </ContainerTexts>
-</Layout>
+</Base>
