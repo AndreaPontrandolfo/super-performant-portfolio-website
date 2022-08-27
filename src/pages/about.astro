@@ -1,11 +1,11 @@
 ---
 import ContainerTexts from "../components/ContainerTexts.astro";
 import TimelineListItem from "../components/TimelineListItem.astro";
-import Layout from "../layouts/Layout.astro";
+import Base from "../layouts/Base.astro";
 import { routes } from "../utils/constants.mjs";
 ---
 
-<Layout
+<Base
   title="About"
   description="Biografia e intenzioni di Luca Pontrandolfo."
   endpoint={routes.ABOUT}
@@ -128,4 +128,4 @@ import { routes } from "../utils/constants.mjs";
       </p>
     </section>
   </ContainerTexts>
-</Layout>
+</Base>

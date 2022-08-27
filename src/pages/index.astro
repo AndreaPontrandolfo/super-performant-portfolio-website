@@ -1,5 +1,5 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Base from "../layouts/Base.astro";
 import MainGallery from "../components/MainGallery.astro";
 import LandingHero from "../components/LandingHero.astro";
 import HeroText from "../components/HeroText.astro";
@@ -7,7 +7,7 @@ import ContentPointer from "../components/ContentPointer.astro";
 import { routes } from "../utils/constants.mjs";
 ---
 
-<Layout
+<Base
   title="Homepage"
   description="Galleria d'arte digitale dell'autore Luca Pontrandolfo."
   endpoint={routes.INDEX}
@@ -19,7 +19,7 @@ import { routes } from "../utils/constants.mjs";
     </div>
   </LandingHero>
   <MainGallery />
-</Layout>
+</Base>
 <style>
   .image-gradient {
     background: rgb(24, 32, 36);

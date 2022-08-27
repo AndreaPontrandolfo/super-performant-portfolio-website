@@ -1,13 +1,13 @@
 ---
 import GalleryTurinSeries from "../components/GalleryTurinSeries/GalleryTurinSeries.index.astro";
-import Layout from "../layouts/Layout.astro";
+import Base from "../layouts/Base.astro";
 import { routes } from "../utils/constants.mjs";
 ---
 
-<Layout
+<Base
   title="Turin Series"
   description="Galleria di opere dell'autore raffiguranti fotografie di Venezia modificate digitalmente."
   endpoint={routes.TURIN}
 >
   <GalleryTurinSeries />
-</Layout>
+</Base>
