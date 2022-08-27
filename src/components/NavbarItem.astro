@@ -8,16 +8,14 @@ export interface Props {
 const { text, href, isActive } = Astro.props as Props;
 ---
 
-<li>
+<li class="min-w-[4rem] min-h-[1.2rem]">
   <a
     href={href}
     rel="prefetch"
-    class={`block py-2 pr-4 pl-3 ${
+    class={`block py-2 ${
       isActive ? "text-slate-800" : ""
     } rounded format leading-none
-        hover:bg-gray-100 md:hover:bg-transparent md:hover:text-slate-800 md:p-0 md:dark:hover:text-white
-        dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent
-        dark:border-gray-700`}
+        hover:bg-gray-100 md:hover:bg-transparent md:hover:text-slate-800 md:p-0`}
     >{text}
   </a>
 </li>
