@@ -58,41 +58,88 @@ const { title, description, endpoint } = Astro.props as Props;
       <slot />
     </main>
     <Footer />
-    <script type="module" src="./public/app.js"></script>
 
-    <script src="../utils/pwa.ts"></script>
+    <style>
+      :root {
+        --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+        --font-size-lg: clamp(1.2rem, 0.7vw + 1.2rem, 1.5rem);
+        --font-size-xl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+
+        --color-text: hsl(12, 5%, 4%);
+        --color-bg: hsl(10, 21%, 95%);
+        --color-border: hsl(17, 24%, 90%);
+      }
+
+      html {
+        font-size: var(--font-size-base);
+        color: var(--color-text);
+        background-color: var(--color-bg);
+        overflow-y: scroll;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .transition-fade-anim {
+        transition: 0.3s;
+        opacity: 1;
+      }
+
+      html.is-animating .transition-fade-anim {
+        opacity: 0;
+      }
+    </style>
+    <script>
+      import Swup from "swup";
+
+      const swup = new Swup();
+
+      const dropdown = document.getElementById("dropdownNavbar");
+      const navbar = document.getElementById("navbar-sticky");
+
+      const hamburger = window.document.querySelector(
+        '[data-collapse-toggle="navbar-sticky"]'
+      );
+
+      hamburger.addEventListener("click", (e) => {
+        navbar.classList.toggle("hidden");
+
+        if (!dropdown.classList.contains("closed")) {
+          dropdown.classList.add("closed");
+        }
+      });
+
+      dropdown.addEventListener("mouseenter", (e) => {
+        if (e.target.classList.contains("closed")) {
+          e.target.classList.remove("closed");
+        }
+      });
+
+      dropdown.addEventListener("mouseleave", (e) => {
+        if (!e.target.classList.contains("closed")) {
+          e.target.classList.add("closed");
+        }
+      });
+
+      swup.on("clickLink", (e) => {
+        dropdown.classList.add("closed");
+        navbar.classList.add("hidden");
+      });
+    </script>
+    <script>
+      import { registerSW } from "virtual:pwa-register";
+
+      const updateSW = registerSW({
+        onNeedRefresh() {},
+        onOfflineReady() {
+          console.log("Offline ready");
+        },
+      });
+
+      updateSW();
+    </script>
   </body>
 </html>
-<style>
-  :root {
-    --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
-    --font-size-lg: clamp(1.2rem, 0.7vw + 1.2rem, 1.5rem);
-    --font-size-xl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
-
-    --color-text: hsl(12, 5%, 4%);
-    --color-bg: hsl(10, 21%, 95%);
-    --color-border: hsl(17, 24%, 90%);
-  }
-
-  html {
-    font-size: var(--font-size-base);
-    color: var(--color-text);
-    background-color: var(--color-bg);
-    overflow-y: scroll;
-  }
-
-  body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .transition-fade-anim {
-    transition: 0.3s;
-    opacity: 1;
-  }
-
-  html.is-animating .transition-fade-anim {
-    opacity: 0;
-  }
-</style>
