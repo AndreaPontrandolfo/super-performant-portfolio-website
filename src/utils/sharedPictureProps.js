@@ -10,6 +10,7 @@ export const sharedPictureProps = {
     },
   },
   preload: "webp",
+  loading: "lazy",
   fallbackFormat: "jpg",
   includeSourceFormat: false,
 };
