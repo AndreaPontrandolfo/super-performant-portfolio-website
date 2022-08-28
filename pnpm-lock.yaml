@@ -7,6 +7,7 @@ specifiers:
   '@astrojs/tailwind': ^1.0.0
   '@fontsource/montserrat': ^4.5.12
   '@fontsource/playfair-display': ^4.5.11
+  '@swup/head-plugin': ^1.2.1
   astro: 1.0.1
   astro-compress: ^1.0.3
   astro-critters: ^1.0.1
@@ -30,6 +31,7 @@ specifiers:
 dependencies:
   '@fontsource/montserrat': 4.5.12
   '@fontsource/playfair-display': 4.5.11
+  '@swup/head-plugin': 1.2.1
   astro-icon: 0.7.3
   astro-seo-meta: 0.0.2_astro@1.0.1
   flowbite: 1.5.2
@@ -2002,6 +2004,16 @@ packages:
     dependencies:
       tslib: 2.4.0
     dev: true
+
+  /@swup/head-plugin/1.2.1:
+    resolution: {integrity: sha512-crTX9KXkj7isGKyyRKaN+HZ293MYe92QhYWGuc2isSB3tb3EthX3IyPBIjqdhBYMFG6U2XMLWuEge/M9wXAfOw==}
+    dependencies:
+      '@swup/plugin': 1.0.1
+    dev: false
+
+  /@swup/plugin/1.0.1:
+    resolution: {integrity: sha512-QrTGn1DLx+50CNsk6oGzUFnyNyLkDK6iLb032qKImmAXS+0Dd1cwa8cSGvJ+I27J4qR8y6oJNurgHIEc6ZCTrg==}
+    dev: false
 
   /@tokenizer/token/0.3.0:
     resolution: {integrity: sha512-OvjF+z51L3ov0OyAU0duzsYuvO01PH7x4t6DJx+guahgTnBHkhJdG7soQeTSFLWN3efnHyibZ4Z8l2EuWwJN3A==}
