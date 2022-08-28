@@ -96,12 +96,15 @@ const { title, description, endpoint } = Astro.props as Props;
     </style>
     <script>
       import Swup from "swup";
+      import SwupHeadPlugin from "@swup/head-plugin";
 
-      const swup = new Swup();
+      const swup = new Swup({
+        plugins: [new SwupHeadPlugin()],
+      });
 
       const dropdown = document.getElementById("dropdownNavbar");
       const navbar = document.getElementById("navbar-sticky");
-
+      const navbarLinks = navbar.querySelectorAll("a");
       const hamburger = window.document.querySelector(
         '[data-collapse-toggle="navbar-sticky"]'
       );
@@ -129,6 +132,15 @@ const { title, description, endpoint } = Astro.props as Props;
       swup.on("clickLink", (e) => {
         dropdown.classList.add("closed");
         navbar.classList.add("hidden");
+      });
+
+      navbarLinks.forEach((navbarLink, index, originalList) => {
+        navbarLink.addEventListener("click", (e) => {
+          originalList.forEach((link) =>
+            link.classList.remove("text-slate-800")
+          );
+          e.target.classList.add("text-slate-800");
+        });
       });
     </script>
     <script>

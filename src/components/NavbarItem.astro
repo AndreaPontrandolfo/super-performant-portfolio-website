@@ -14,8 +14,7 @@ const { text, href, isActive } = Astro.props as Props;
     rel="prefetch"
     class={`block py-2 ${
       isActive ? "text-slate-800" : ""
-    } rounded format leading-none
-        hover:bg-gray-100 md:hover:bg-transparent md:hover:text-slate-800 md:p-0`}
+    } rounded format leading-none hover:bg-gray-100 md:hover:bg-transparent md:hover:text-slate-800 md:p-0`}
     >{text}
   </a>
 </li>
