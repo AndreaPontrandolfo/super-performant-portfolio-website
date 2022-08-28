@@ -1,24 +1,13 @@
 ---
 import GalleryPaintingsSeries from "../components/GalleryPaintingsSeries/GalleryPaintingsSeries.index.astro";
-import Layout from "../layouts/Layout.astro";
+import Base from "../layouts/Base.astro";
 import { routes } from "../utils/constants.mjs";
 ---
 
-<Layout
+<Base
   title="Paintings"
   description="Gallery of works by the author depicting hand-painted paintings."
   endpoint={routes.PAINTINGS}
 >
   <GalleryPaintingsSeries />
-</Layout>
-<!-- <script src="../../node_modules/flowbite/dist/flowbite.js">
-  import "flowbite";
-
-  const dropdown = document.getElementById("dropdownNavbar");
-  window.alert("ALERT");
-  console.log("🚀 ~ file: paintings.astro ~ line 16 ~ dropdown", dropdown);
-  const collapse = new Collapse(dropdown);
-  console.log("🚀 ~ file: paintings.astro ~ line 18 ~ Collapse", Collapse);
-  console.log("🚀 ~ file: paintings.astro ~ line 18 ~ collapse", collapse);
-  collapse.collapse();
-</script> -->
+</Base>

@@ -53,8 +53,10 @@
   "dependencies": {
     "@fontsource/montserrat": "^4.5.12",
     "@fontsource/playfair-display": "^4.5.11",
+    "@swup/head-plugin": "^1.2.1",
     "astro-icon": "^0.7.3",
     "astro-seo-meta": "^0.0.2",
+    "current-device": "^0.10.2",
     "flowbite": "^1.5.2",
     "swup": "^2.0.18"
   },

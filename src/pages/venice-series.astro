@@ -1,13 +1,13 @@
 ---
 import GalleryVeniceSeries from "../components/GalleryVeniceSeries/GalleryVeniceSeries.index.astro";
-import Layout from "../layouts/Layout.astro";
+import Base from "../layouts/Base.astro";
 import { routes } from "../utils/constants.mjs";
 ---
 
-<Layout
+<Base
   title="Venice Series"
   description="Gallery of works by the author depicting digitally modified photographs of Venice."
   endpoint={routes.VENICE}
 >
   <GalleryVeniceSeries />
-</Layout>
+</Base>

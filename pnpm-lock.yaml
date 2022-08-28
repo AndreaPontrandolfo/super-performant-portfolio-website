@@ -7,6 +7,7 @@ specifiers:
   '@astrojs/tailwind': ^1.0.0
   '@fontsource/montserrat': ^4.5.12
   '@fontsource/playfair-display': ^4.5.11
+  '@swup/head-plugin': ^1.2.1
   astro: 1.0.1
   astro-compress: ^1.0.3
   astro-critters: ^1.0.1
@@ -15,6 +16,7 @@ specifiers:
   astro-robots-txt: ^0.3.7
   astro-seo-meta: ^0.0.2
   autoprefixer: ^10.4.8
+  current-device: ^0.10.2
   flowbite: ^1.5.2
   flowbite-typography: ^1.0.2
   postcss: ^8.4.16
@@ -30,8 +32,10 @@ specifiers:
 dependencies:
   '@fontsource/montserrat': 4.5.12
   '@fontsource/playfair-display': 4.5.11
+  '@swup/head-plugin': 1.2.1
   astro-icon: 0.7.3
   astro-seo-meta: 0.0.2_astro@1.0.1
+  current-device: 0.10.2
   flowbite: 1.5.2
   swup: 2.0.18
 
@@ -2003,6 +2007,16 @@ packages:
       tslib: 2.4.0
     dev: true
 
+  /@swup/head-plugin/1.2.1:
+    resolution: {integrity: sha512-crTX9KXkj7isGKyyRKaN+HZ293MYe92QhYWGuc2isSB3tb3EthX3IyPBIjqdhBYMFG6U2XMLWuEge/M9wXAfOw==}
+    dependencies:
+      '@swup/plugin': 1.0.1
+    dev: false
+
+  /@swup/plugin/1.0.1:
+    resolution: {integrity: sha512-QrTGn1DLx+50CNsk6oGzUFnyNyLkDK6iLb032qKImmAXS+0Dd1cwa8cSGvJ+I27J4qR8y6oJNurgHIEc6ZCTrg==}
+    dev: false
+
   /@tokenizer/token/0.3.0:
     resolution: {integrity: sha512-OvjF+z51L3ov0OyAU0duzsYuvO01PH7x4t6DJx+guahgTnBHkhJdG7soQeTSFLWN3efnHyibZ4Z8l2EuWwJN3A==}
     dev: true
@@ -3123,6 +3137,10 @@ packages:
     dependencies:
       cssom: 0.3.8
     dev: true
+
+  /current-device/0.10.2:
+    resolution: {integrity: sha512-FN223n2Cp1fRI/gyjJEAdagHhJ/2Z2STz3tUg1t4F259BhmVRCChkmxcgFtjYJsWuIacQEs7bqJpnAczIXIkWw==}
+    dev: false
 
   /data-uri-to-buffer/4.0.0:
     resolution: {integrity: sha512-Vr3mLBA8qWmcuschSLAOogKgQ/Jwxulv3RNE4FXnYWRGujzrRWQI4m12fQqRkwX06C0KanhLr4hK+GydchZsaA==}

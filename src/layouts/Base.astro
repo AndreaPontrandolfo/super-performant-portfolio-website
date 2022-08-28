@@ -1,0 +1,166 @@
+---
+import { Seo } from "astro-seo-meta";
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+import "@fontsource/montserrat/variable.css";
+import "@fontsource/playfair-display/400.css";
+import "@fontsource/playfair-display/900.css";
+import "@fontsource/playfair-display/variable.css";
+import { WEBSITE_URL } from "../utils/constants.mjs";
+
+export interface Props {
+  title: string;
+  description: string;
+  endpoint?: string;
+}
+
+const { title, description, endpoint } = Astro.props as Props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="manifest" href="/manifest.json" />
+    <Seo
+      title={`Luca Pontrandolfo | ${title}`}
+      description={description}
+      icon="/favicon.ico"
+      colorScheme="light"
+      themeColor="#000000"
+      keywords={[
+        "Luca",
+        "Pontrandolfo",
+        "website",
+        "portfolio",
+        "art",
+        "artist",
+        "galleries",
+        "Venezia",
+        "Torino",
+        "astro",
+      ]}
+      twitter={{
+        image: "/src/images/fotoPortrait.png",
+        card: "summary",
+      }}
+      facebook={{
+        image: "/src/images/fotoPortrait.png",
+        url: `${WEBSITE_URL}${endpoint ? endpoint : ""}`,
+        type: "website",
+      }}
+    />
+  </head>
+
+  <body>
+    <Navbar currentRoute={title} />
+    <main id="swup" class="transition-fade-anim">
+      <slot />
+    </main>
+    <Footer />
+
+    <style>
+      :root {
+        --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+        --font-size-lg: clamp(1.2rem, 0.7vw + 1.2rem, 1.5rem);
+        --font-size-xl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+
+        --color-text: hsl(12, 5%, 4%);
+        --color-bg: hsl(10, 21%, 95%);
+        --color-border: hsl(17, 24%, 90%);
+      }
+
+      html {
+        font-size: var(--font-size-base);
+        color: var(--color-text);
+        background-color: var(--color-bg);
+        overflow-y: scroll;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .transition-fade-anim {
+        transition: 0.3s;
+        opacity: 1;
+      }
+
+      html.is-animating .transition-fade-anim {
+        opacity: 0;
+      }
+    </style>
+    <script>
+      import Swup from "swup";
+      import SwupHeadPlugin from "@swup/head-plugin";
+      import device from "current-device";
+
+      const swup = new Swup({
+        plugins: [new SwupHeadPlugin()],
+      });
+
+      const dropdown = document.getElementById("dropdownNavbar");
+      const navbar = document.getElementById("navbar-sticky");
+      const navbarLinks = navbar.querySelectorAll("a");
+      const hamburger = window.document.querySelector(
+        '[data-collapse-toggle="navbar-sticky"]'
+      );
+
+      hamburger.addEventListener("click", (e) => {
+        navbar.classList.toggle("hidden");
+
+        if (!dropdown.classList.contains("closed")) {
+          dropdown.classList.add("closed");
+        }
+      });
+
+      if (device.desktop()) {
+        dropdown.addEventListener("mouseenter", (e) => {
+          if (e.target.classList.contains("closed")) {
+            e.target.classList.remove("closed");
+          }
+        });
+
+        dropdown.addEventListener("mouseleave", (e) => {
+          if (!e.target.classList.contains("closed")) {
+            e.target.classList.add("closed");
+          }
+        });
+      } else {
+        dropdown.addEventListener("click", (e) => {
+          dropdown.classList.toggle("closed");
+        });
+      }
+
+      swup.on("clickLink", (e) => {
+        dropdown.classList.add("closed");
+        navbar.classList.add("hidden");
+      });
+
+      navbarLinks.forEach((navbarLink, index, originalList) => {
+        navbarLink.addEventListener("click", (e) => {
+          originalList.forEach((link) =>
+            link.classList.remove("text-slate-800")
+          );
+          e.target.classList.add("text-slate-800");
+        });
+      });
+    </script>
+    <script>
+      import { registerSW } from "virtual:pwa-register";
+
+      const updateSW = registerSW({
+        onNeedRefresh() {},
+        onOfflineReady() {
+          console.log("Offline ready");
+        },
+      });
+
+      updateSW();
+    </script>
+  </body>
+</html>

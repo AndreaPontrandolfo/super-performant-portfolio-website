@@ -1,13 +1,12 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Base from "../layouts/Base.astro";
 import MainGallery from "../components/MainGallery.astro";
 import LandingHero from "../components/LandingHero.astro";
-import HeroText from "../components/HeroText.astro";
 import ContentPointer from "../components/ContentPointer.astro";
 import { routes } from "../utils/constants.mjs";
 ---
 
-<Layout
+<Base
   title="Homepage"
   description="Digital art gallery of the author Luca Pontrandolfo."
   endpoint={routes.INDEX}
@@ -15,4 +14,4 @@ import { routes } from "../utils/constants.mjs";
   <ContentPointer />
   <LandingHero />
   <MainGallery />
-</Layout>
+</Base>
