@@ -97,6 +97,7 @@ const { title, description, endpoint } = Astro.props as Props;
     <script>
       import Swup from "swup";
       import SwupHeadPlugin from "@swup/head-plugin";
+      import device from "current-device";
 
       const swup = new Swup({
         plugins: [new SwupHeadPlugin()],
@@ -117,17 +118,23 @@ const { title, description, endpoint } = Astro.props as Props;
         }
       });
 
-      dropdown.addEventListener("mouseenter", (e) => {
-        if (e.target.classList.contains("closed")) {
-          e.target.classList.remove("closed");
-        }
-      });
+      if (device.desktop()) {
+        dropdown.addEventListener("mouseenter", (e) => {
+          if (e.target.classList.contains("closed")) {
+            e.target.classList.remove("closed");
+          }
+        });
 
-      dropdown.addEventListener("mouseleave", (e) => {
-        if (!e.target.classList.contains("closed")) {
-          e.target.classList.add("closed");
-        }
-      });
+        dropdown.addEventListener("mouseleave", (e) => {
+          if (!e.target.classList.contains("closed")) {
+            e.target.classList.add("closed");
+          }
+        });
+      } else {
+        dropdown.addEventListener("click", (e) => {
+          dropdown.classList.toggle("closed");
+        });
+      }
 
       swup.on("clickLink", (e) => {
         dropdown.classList.add("closed");
