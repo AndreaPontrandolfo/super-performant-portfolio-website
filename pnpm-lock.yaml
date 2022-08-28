@@ -16,6 +16,7 @@ specifiers:
   astro-robots-txt: ^0.3.7
   astro-seo-meta: ^0.0.2
   autoprefixer: ^10.4.8
+  current-device: ^0.10.2
   flowbite: ^1.5.2
   flowbite-typography: ^1.0.2
   postcss: ^8.4.16
@@ -34,6 +35,7 @@ dependencies:
   '@swup/head-plugin': 1.2.1
   astro-icon: 0.7.3
   astro-seo-meta: 0.0.2_astro@1.0.1
+  current-device: 0.10.2
   flowbite: 1.5.2
   swup: 2.0.18
 
@@ -3135,6 +3137,10 @@ packages:
     dependencies:
       cssom: 0.3.8
     dev: true
+
+  /current-device/0.10.2:
+    resolution: {integrity: sha512-FN223n2Cp1fRI/gyjJEAdagHhJ/2Z2STz3tUg1t4F259BhmVRCChkmxcgFtjYJsWuIacQEs7bqJpnAczIXIkWw==}
+    dev: false
 
   /data-uri-to-buffer/4.0.0:
     resolution: {integrity: sha512-Vr3mLBA8qWmcuschSLAOogKgQ/Jwxulv3RNE4FXnYWRGujzrRWQI4m12fQqRkwX06C0KanhLr4hK+GydchZsaA==}
