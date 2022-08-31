@@ -1,0 +1,11 @@
+diff --git a/integration/index.js b/integration/index.js
+index b64f6edd5c04d938d26bc3771809d18c19df0b57..f948ae2756b9bc3980dc35724fe950175af63c6e 100644
+--- a/integration/index.js
++++ b/integration/index.js
+@@ -43,5 +43,6 @@ export default {
+         },
+       });
+     },
++    "astro:build:done": vitePluginAstroImageTools.closeBundle,
+   },
+ };

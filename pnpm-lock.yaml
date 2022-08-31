@@ -1,5 +1,10 @@
 lockfileVersion: 5.4
 
+patchedDependencies:
+  astro-imagetools@0.6.10:
+    hash: zhbunoi5zifwiavaktjocgfu5i
+    path: patches/astro-imagetools@0.6.10.patch
+
 specifiers:
   '@astrojs/mdx': ^0.8.1
   '@astrojs/prefetch': ^0.0.7
@@ -45,7 +50,7 @@ devDependencies:
   astro: 1.0.1
   astro-compress: 1.0.6
   astro-critters: 1.0.3
-  astro-imagetools: 0.6.10_astro@1.0.1
+  astro-imagetools: 0.6.10_zhbunoi5zifwiavaktjocgfu5i_astro@1.0.1
   astro-robots-txt: 0.3.8
   autoprefixer: 10.4.8_postcss@8.4.16
   flowbite-typography: 1.0.2_tailwindcss@3.1.8
@@ -2364,7 +2369,7 @@ packages:
       svgo: 2.8.0
     dev: false
 
-  /astro-imagetools/0.6.10_astro@1.0.1:
+  /astro-imagetools/0.6.10_zhbunoi5zifwiavaktjocgfu5i_astro@1.0.1:
     resolution: {integrity: sha512-b3+vCkud6HeWe3brUI7Rq/RXUPOtuv3GV/ENhd1+4mflISWgCWAEIFSTr+56R6/LUpMdh+ZlLjOQaCG5Ig1v7g==}
     engines: {node: ^14.15.0 || >=16.0.0}
     peerDependencies:
@@ -2380,6 +2385,7 @@ packages:
     optionalDependencies:
       imagetools-core: 3.0.2
     dev: true
+    patched: true
 
   /astro-robots-txt/0.3.8:
     resolution: {integrity: sha512-rx69T8hd79whl4cmGKZCA5KUgWuSU9EKPPqO6RKfIrvDoFpw7sZ/j7EDXWYmT7f+U94oiISNVLnIafmUEkgC5A==}
