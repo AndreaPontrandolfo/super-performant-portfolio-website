@@ -34,7 +34,7 @@
     "@astrojs/prefetch": "^0.0.7",
     "@astrojs/sitemap": "^1.0.0",
     "@astrojs/tailwind": "^1.0.0",
-    "astro": "1.0.1",
+    "astro": "1.1.2",
     "astro-compress": "^1.0.3",
     "astro-critters": "^1.0.1",
     "astro-imagetools": "^0.6.10",
