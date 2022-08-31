@@ -53,14 +53,14 @@ const { currentRoute } = Astro.props as Props;
       id="navbar-sticky"
     >
       <ul
-        class="flex flex-col items-center p-4 xl:pr-0 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white"
+        class="flex flex-col items-center text-center md:text-left p-4 xl:pr-0 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white"
       >
         <NavbarItem
           text="Home"
           href={routes.INDEX}
           isActive={currentRoute === "Homepage"}
         />
-        <li class="min-w-[5rem] min-h-[1.2rem]">
+        <li class="min-w-[6.5rem] min-h-[1.2rem] mb-1">
           <div id="dropdownNavbar" class="overflow-hidden closed absolute">
             <button
               id="dropdownNavbarLink"
@@ -87,7 +87,7 @@ const { currentRoute } = Astro.props as Props;
               </svg>
             </button>
             <ul
-              class="text-sm text-gray-700 rounded bg-white"
+              class="text-sm text-gray-700 rounded bg-white shadow-lg"
               aria-labelledby="dropdownLargeButton"
             >
               <NavbarDropdownItem

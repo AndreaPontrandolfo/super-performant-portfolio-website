@@ -8,8 +8,11 @@ export interface Props {
 const { text, href, isActive } = Astro.props as Props;
 ---
 
-<li class="pl-4 pr-8 py-3 hover:bg-gray-100 font-normal rounded">
-  <a href={href} rel="prefetch" class={`format leading-none hover:bg-gray-100`}
+<li>
+  <a
+    href={href}
+    rel="prefetch"
+    class="block pl-4 pr-8 py-3 rounded format font-normal leading-none hover:bg-gray-100"
     >{text}
   </a>
 </li>
