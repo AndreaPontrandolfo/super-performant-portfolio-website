@@ -17,13 +17,13 @@ export default defineConfig({
   },
   integrations: [
     tailwind(),
-    mdx(),
+    // mdx(),
     prefetch(),
     astroImageTools,
     compress({
       img: astroCompressConfig,
     }),
-    critters(),
+    critters({ fonts: true }),
     sitemap(),
     robotsTxt(),
   ],
