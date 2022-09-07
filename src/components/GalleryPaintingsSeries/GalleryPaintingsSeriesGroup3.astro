@@ -1,16 +1,39 @@
 ---
 import PictureWrapper from "../PictureWrapper.astro";
+export interface Props {
+  preload?: string;
+}
+
+const { preload } = Astro.props as Props;
 ---
 
-<PictureWrapper src="/src/images/firstgallery/3Through.png" title="Through" />
-<PictureWrapper src="/src/images/firstgallery/7Carnival.png" title="Carnival" />
-<PictureWrapper src="/src/images/firstgallery/11Contact.png" title="Contact" />
+<PictureWrapper
+  src="/src/images/firstgallery/3Through.png"
+  title="Through"
+  preload={preload}
+/>
+<PictureWrapper
+  src="/src/images/firstgallery/7Carnival.png"
+  title="Carnival"
+  preload={preload}
+/>
+<PictureWrapper
+  src="/src/images/firstgallery/11Contact.png"
+  title="Contact"
+  preload={preload}
+/>
 <PictureWrapper
   src="/src/images/secondGallery/3Newconctact.png"
   title="New contact"
+  preload={preload}
 />
-<PictureWrapper src="/src/images/secondGallery/7Holiday.png" title="Holiday" />
+<PictureWrapper
+  src="/src/images/secondGallery/7Holiday.png"
+  title="Holiday"
+  preload={preload}
+/>
 <PictureWrapper
   src="/src/images/secondGallery/11Jazzworld.png"
   title="Jazzworld"
+  preload={preload}
 />

@@ -1,6 +1,6 @@
 export const sharedPictureProps = {
   flatten: true,
-  format: ["avif", "webp"],
+  format: ["webp"],
   formatOptions: {
     jpg: {
       quality: 100,
@@ -9,6 +9,7 @@ export const sharedPictureProps = {
       quality: 80,
     },
   },
+
   preload: "webp",
   loading: "lazy",
   fallbackFormat: "jpg",

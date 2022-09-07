@@ -1,8 +1,19 @@
 ---
 import PictureWrapper from "../PictureWrapper.astro";
+export interface Props {
+  preload?: string;
+}
+
+const { preload } = Astro.props as Props;
 ---
 
-<PictureWrapper src="/src/images/veniceSeries/VE-flexn4.png" title="VE-flexn 4"
+<PictureWrapper
+  src="/src/images/veniceSeries/VE-flexn4.png"
+  title="VE-flexn 4"
+  preload={preload}
 />
-<PictureWrapper src="/src/images/veniceSeries/VE-flexn8.png" title="VE-flexn 8"
+<PictureWrapper
+  src="/src/images/veniceSeries/VE-flexn8.png"
+  title="VE-flexn 8"
+  preload={preload}
 />

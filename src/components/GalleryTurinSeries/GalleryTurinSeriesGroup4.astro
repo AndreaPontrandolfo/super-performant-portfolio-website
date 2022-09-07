@@ -1,12 +1,19 @@
 ---
 import PictureWrapper from "../PictureWrapper.astro";
+export interface Props {
+  preload?: string;
+}
+
+const { preload } = Astro.props as Props;
 ---
 
 <PictureWrapper
   src="/src/images/torinoSeries/ReflexTOn.9.png"
   title="ReflexTOn 9"
+  preload={preload}
 />
 <PictureWrapper
   src="/src/images/torinoSeries/ReflexTOn.10.png"
   title="ReflexTOn 10"
+  preload={preload}
 />

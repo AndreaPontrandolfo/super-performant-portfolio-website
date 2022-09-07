@@ -1,15 +1,44 @@
 ---
 import PictureWrapper from "../PictureWrapper.astro";
+export interface Props {
+  preload?: string;
+}
+
+const { preload } = Astro.props as Props;
 ---
 
 <PictureWrapper
   src="/src/images/firstgallery/2Tothemusiccity.png"
   title="To the music city"
+  preload={preload}
 />
-<PictureWrapper src="/src/images/firstgallery/6Why_.png" title="Why" />
-<PictureWrapper src="/src/images/firstgallery/10Canal.png" title="Canal" />
-<PictureWrapper src="/src/images/secondGallery/2Anyway.png" title="Anyway" />
-<PictureWrapper src="/src/images/secondGallery/6Casanova.png" title="Casanova"
+<PictureWrapper
+  src="/src/images/firstgallery/6Why_.png"
+  title="Why"
+  preload={preload}
 />
-<PictureWrapper src="/src/images/secondGallery/10Jazzman.png" title="Jazzman" />
-<PictureWrapper src="/src/images/secondGallery/13M.M.png" title="M.M" />
+<PictureWrapper
+  src="/src/images/firstgallery/10Canal.png"
+  title="Canal"
+  preload={preload}
+/>
+<PictureWrapper
+  src="/src/images/secondGallery/2Anyway.png"
+  title="Anyway"
+  preload={preload}
+/>
+<PictureWrapper
+  src="/src/images/secondGallery/6Casanova.png"
+  title="Casanova"
+  preload={preload}
+/>
+<PictureWrapper
+  src="/src/images/secondGallery/10Jazzman.png"
+  title="Jazzman"
+  preload={preload}
+/>
+<PictureWrapper
+  src="/src/images/secondGallery/13M.M.png"
+  title="M.M"
+  preload={preload}
+/>
