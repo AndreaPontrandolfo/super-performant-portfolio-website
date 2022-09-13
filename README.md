@@ -1,44 +1,41 @@
-# Welcome to [Astro](https://astro.build)
+# :art: Luca Pontrandolfo Public Website
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+This is a static website made for the artist Luca Pontrandolfo.
+It features all his artworks.
+Made with [Astro](https://astro.build/), aim to ship as less JS as possible and have very good performance.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-## 🚀 Project Structure
+![Foto](https://github.com/AndreaPontrandolfo/super-performant-portfolio-website/blob/master/src/images/fotoPortrait.png)
 
-Inside of your Astro project, you'll see the following folders and files:
 
+## :100: Lighthouse Reports
+
+![Lighthouse reports](https://github.com/AndreaPontrandolfo/super-performant-portfolio-website/blob/master/reports/max_lighthouse_score.JPG)
+
+## :sparkles: Tech Stack
+
+*** [Astro](https://astro.build/)
+*** [TailwindCSS](https://tailwindcss.com/)
+*** [Swup](https://swup.js.org/)
+
+## :electric_plug: Installation
+
+Install with pnpm
+
+```bash
+  pnpm install
 ```
-/
-├── public/
-│   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+    
+## :hammer: Commands
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+| Command             | Action                                                                             |
+| :-------------------| :-------------------------------------------------                                 |
+| `pnpm dev`          | Starts local dev server at `localhost:3000`                                        |
+| `pnpm build`        | Build your production site to `./dist/`                                            |
+| `pnpm preview`      | Preview your build locally, before deploying                                       |
+| `pnpm astro ...`    | Run CLI commands like `astro add`, `astro preview`                                 |
+| `pnpm astro --help` | Get help using the Astro CLI                                                       |
+| `localhost:expose`  | Expose your localhost over the public network, so you can access it with your phone|
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components or layouts.
 
-Any static assets, like images, can be placed in the `public/` directory.
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                | Action                                             |
-| :--------------------- | :------------------------------------------------- |
-| `npm install`          | Installs dependencies                              |
-| `npm run dev`          | Starts local dev server at `localhost:3000`        |
-| `npm run build`        | Build your production site to `./dist/`            |
-| `npm run preview`      | Preview your build locally, before deploying       |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro preview` |
-| `npm run astro --help` | Get help using the Astro CLI                       |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
