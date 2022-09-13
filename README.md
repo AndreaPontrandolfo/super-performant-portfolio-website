@@ -2,6 +2,7 @@
 
 This is a static website made for the artist Luca Pontrandolfo.<br/>
 It features all his artworks.<br/>
+
 <img src="https://github.com/AndreaPontrandolfo/super-performant-portfolio-website/blob/master/src/images/fotoPortrait.png" width="148">
 
 Made with [Astro](https://astro.build/), aim to ship as less JS as possible and have very good performance.
