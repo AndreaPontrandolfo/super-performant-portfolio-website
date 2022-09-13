@@ -1,11 +1,10 @@
 # :art: Luca Pontrandolfo Public Website
 
-This is a static website made for the artist Luca Pontrandolfo.
-It features all his artworks.
+This is a static website made for the artist Luca Pontrandolfo.<br/>
+It features all his artworks.<br/>
 Made with [Astro](https://astro.build/), aim to ship as less JS as possible and have very good performance.
 
-
-![Foto](https://github.com/AndreaPontrandolfo/super-performant-portfolio-website/blob/master/src/images/fotoPortrait.png)
+<img src="https://github.com/AndreaPontrandolfo/super-performant-portfolio-website/blob/master/src/images/fotoPortrait.png" width="148">
 
 
 ## :100: Lighthouse Reports
@@ -14,9 +13,9 @@ Made with [Astro](https://astro.build/), aim to ship as less JS as possible and 
 
 ## :sparkles: Tech Stack
 
-*** [Astro](https://astro.build/)
-*** [TailwindCSS](https://tailwindcss.com/)
-*** [Swup](https://swup.js.org/)
+### [Astro](https://astro.build/)
+### [TailwindCSS](https://tailwindcss.com/)
+### [Swup](https://swup.js.org/)
 
 ## :electric_plug: Installation
 
