@@ -1,14 +1,4 @@
-
-## Badges
-
-Add badges from somewhere like: [shields.io](https://shields.io/)
-
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
-[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
-
-
-# Luca Pontrandolfo Public Website
+# :art: Luca Pontrandolfo Public Website
 
 This is a static website made for the artist Luca Pontrandolfo.
 It features all his artworks.
@@ -18,25 +8,25 @@ Made with [Astro](https://astro.build/), aim to ship as less JS as possible and 
 ![Foto](https://github.com/AndreaPontrandolfo/super-performant-portfolio-website/blob/master/src/images/fotoPortrait.png)
 
 
-## Lighthouse Reports
+## :100: Lighthouse Reports
 
 ![Lighthouse reports](https://github.com/AndreaPontrandolfo/super-performant-portfolio-website/blob/master/reports/max_lighthouse_score.JPG)
 
-## Tech Stack
+## :sparkles: Tech Stack
 
 *** [Astro](https://astro.build/)
 *** [TailwindCSS](https://tailwindcss.com/)
 *** [Swup](https://swup.js.org/)
 
-## Installation
+## :electric_plug: Installation
 
-Install my-project with npm
+Install with pnpm
 
 ```bash
   pnpm install
 ```
     
-## Commands
+## :hammer: Commands
 
 | Command             | Action                                                                             |
 | :-------------------| :-------------------------------------------------                                 |
